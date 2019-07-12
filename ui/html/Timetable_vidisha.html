@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Time Table</title>
+    <script type="text/javascript" src="Timetable_vidisha.js"></script>
+    <style>
+        .main_div {
+            margin: 0px;
+            display: block;
+            height: 750px;
+            ;
+            background: linear-gradient(45deg, #9490905c 20%, blue 20%, #f99dadd1 20%, #9c27b075 40%)
+        }
+        
+        .details_div fieldset fieldset {
+            background-color: rgb(252, 202, 248);
+            width: 400px;
+            float: left;
+        }
+        
+        .details_div fieldset fieldset label {
+            padding-left: 20px;
+        }
+        
+        .but {
+            background-color: chartreuse;
+            width: 340px;
+            height: 140px;
+        }
+        
+        .time {
+            border: 2px solid grey;
+        }
+        
+        input[type="button"] {
+            height: 30px;
+            background-color: blanchedalmond;
+            width: 90px;
+        }
+        
+        h1 {
+            padding-top: 20px;
+            text-align: center;
+            font-size: 40px;
+        }
+        
+        fieldset {
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        
+        input[type="text"] {
+            width: 90px;
+        }
+        
+        legend {
+            font-size: 25px;
+        }
+        
+        label {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_div">
+        <h1>Time Table</h1>
+        <div class="div_Table">
+            <fieldset>
+                <legend>Time Table</legend>
+                <table class="time">
+                    <thead>
+                        <tr>
+                            <th>Subject/Time</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th>8:00AM-9:00AM</th>
+                            <th>9:00AM-10:00AM</th>
+                            <th>10:00AM-11:00AM</th>
+                            <th>11:00AM-12:00AM</th>
+                            <th>12:00AM-01:00PM</th>
+                            <th>01:00PM-02:00PM</th>
+                            <th>02:00PM-03:00PM</th>
+                        </tr>
+                    </thead>
+                    <tbody id="emp-details">
+
+                    </tbody>
+                </table>
+            </fieldset>
+        </div>
+        <div class="details_div">
+            <fieldset>
+                <legend>Details</legend>
+                <div>
+                    <fieldset>
+                        <legend>Time Table Creater</legend>
+
+                        <label>Class</label>
+                        <select id="class_select">
+                            <option>Select</option>
+                            <option>Class 11A</option>
+                            <option>Class 11B</option>
+                        </select><br><br>
+                        <label>Time Slot</label>
+                        <select>
+                            <option>select</option>
+                            <option>8:00AM-9:00AM</option>
+                            <option>9:00AM-10:00AM</option>
+                            <option>10:00AM-11:00AM</option>
+                            <option>11:00AM-12:00AM</option>
+                            <option>12:00AM-01:00PM</option>
+                            <option>01:00PM-02:00PM</option>
+                            <option>02:00PM-03:00PM</option>
+                        </select><br><br>
+                        <input type="button" value="Create" onclick="create_table()" />
+                    </fieldset>
+
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Class and Subject Info</legend>
+                        <label>Subject</label>
+                        <select id='su'>
+                            <option>Select</option>                            
+                            <option value="maths">Maths</option>
+                            <option value="english">English</option>
+                            <option value="hindi">Hindi</option>
+                            <option value="science">Science</option>
+                            <option value="sst">SSt</option>
+                            <option value="sports">Sports</option>
+                        </select>
+                        <br><br>
+                        <label>Trainer</label>
+                        <select id="op">
+                            <option>select</option>
+                        
+                        </select>
+                        <br><br>
+                        <input type="button" value="assign" onclick="assign_sub()" />
+                    </fieldset>
+
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Trainer Details</legend>
+                        <label>Name:</label>
+                        <input type="text" name="tname" id="tname" /><br><br>
+                        <label>Fav Sub :</label>
+                        <input type="text" name="" id="tsub" /><br><br>
+
+
+                        <input type="button" value="ADD Trainer" id="" onclick="_addTrainer()" />
+                    </fieldset>
+
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</body>
+
+</html>
