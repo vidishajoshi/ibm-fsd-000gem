@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Small Amazon</title>
+    <script type="text/javascript">
+        // const saveItem = (name, description, quant, price) => {
+        //     const baseUrl = 'http://localhost:3479';
+        //     // api to get the next user id
+        //     fetch(baseUrl + '/products/nextId')
+        //         .then(res => res.json())
+        //         .then(item => {
+        //             const id = res.nextId;
+        //             var obj = []
+        //             item.forEach(element => {
+        //                 obj += item.id
+        //             });
+        //             fetch(baseUrl + '/products/add', {
+        //                     method: 'POST',
+        //                     body: JSON.stringify({
+        //                         id: e,
+        //                         name: obj.name,
+        //                         description: obj.description,
+        //                         quant: obj.quant,
+        //                         price: obj.price
+        //                     })
+        //                 })
+        //                 .then(response => response.json())
+        //                 .then(item => {
+        //                     createTable(item);
+        //                 });
+        //         })
+        // }
+
+        const createTable = (data) => {
+            let rows = '';
+            data.products.forEach(u => {
+                rows += `<tr>
+                        <td>${u.id}</td>
+                        <td>${u.name}</td>
+                        <td>${u.description}</td>
+                        <td>${u.quant}</td>
+                        <td>${u.price}</td>                             
+                    </tr>`
+            });
+            const _table = `<table style="border : 2px solid red;">
+                            <tr>
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>Description</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                            </tr>
+                            ${rows}
+                        </table>`
+            document.getElementById('item_1').innerHTML = _table;
+        }
+
+        function access_data(i) {
+            const _url = 'http://localhost:3476/item/display';
+            fetch(_url)
+                .then(item => item.json())
+                .then(item => {
+                    const arr = item.item.forEach(u => {
+                        if (u.id == i) {
+                            const name = u.name;
+                            const quant = u.quant;
+                            const price = u.price;
+                            const description = u.description;
+                        }
+                    });
+                    const url_ = 'http://localhost:3476/products/display';
+                    fetch(url_)
+                        .then(products => products.json())
+                        .then(products => {
+                            const qw = products.products.forEach(f => {
+                                const baseUrl = 'http://localhost:3479';
+                                // api to get the next user id
+                                fetch(baseUrl + '/products/nextId')
+                                    .then(res => res.json())
+                                    .then(item => {
+                                        const id = res.nextId;
+                                        break;
+                                    })
+                            })
+                        });
+                    fetch(baseUrl + '/products/add', {
+                            method: 'POST',
+                            body: JSON.stringify({
+                                id: e,
+                                name: name,
+                                description: description,
+                                quant: quant,
+                                price: price
+                            })
+                        })
+                        .then(response => response.json())
+                        .then(products => {
+                            createTable(products);
+                        });
+
+
+                })
+        }
+    </script>
+
+
+
+    <style>
+        /*styling of the page*/
+        
+        .main_body {
+            display: block;
+            background-color: #eaeded;
+            height: 800px;
+            width: 100;
+        }
+        
+        .heading {
+            display: block;
+            width: 1470px;
+            height: 100px;
+            background-color: rgb(35, 47, 62);
+            ;
+            float: left;
+            margin-bottom: 20px;
+        }
+        
+        .heading h1 {
+            margin-left: 200px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 46px;
+            color: white;
+        }
+        
+        .icon {
+            display: block;
+            height: 100px;
+            width: 95px;
+            background-color: rgb(189, 163, 18);
+            ;
+            float: left;
+            margin-bottom: 20px;
+        }
+        
+        .icon img {
+            display: block;
+            height: 90px;
+            width: 80px;
+        }
+        
+        .item_ {
+            display: block;
+            height: 350px;
+            width: 240px;
+            background-color: white;
+            float: left;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            border-radius: 0.5px;
+        }
+        
+        div img {
+            margin-left: 7px;
+            margin-top: 5px;
+        }
+        
+        div h3 {
+            margin-left: 30px;
+        }
+        
+        div input[type='button'] {
+            margin-left: 30px;
+            margin-bottom: 15px;
+            height: 40px;
+            width: 180px;
+            border: 2px solid black;
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main_body">
+        <div class="header">
+            <div class="heading">
+                <h1>Amazon Cosmetics</h1>
+            </div>
+            <div class="icon">
+                <a href='checkout.html'><img src="cart1.png" /></a>
+            </div>
+        </div>
+        <div class="item_display">
+            <div id="item_" class="item_">
+                <img src="shampoo.jfif" />
+                <h3>Shampoo</h3>
+                <input type='button' id="item_1" name='1' value="Add to Cart" onclick="access_data('1')" />
+            </div>
+            <div id="item_" class="item_">
+                <img src="conditioner.jfif" />
+                <h3>Conditioner</h3>
+                <input type='button' id="item_1" name='2' value="Add to Cart" onclick="access_data('2')" />
+            </div>
+            <div id="item_" class="item_">
+                <img src="lipstick.jfif" />
+                <h3>Lipstick</h3>
+                <input type='button' id="item_1" name='3' value="Add to Cart" onclick="access_data('3')" />
+            </div>
+            <div id="item_" class="item_">
+                <img src="foundation.jfif" />
+                <h3>Foundation</h3>
+                <input type='button' id="item_1" name='4' value="Add to Cart" onclick="access_data('4')" />
+            </div>
+            <div id="item_" class="item_">
+                <img src="nailpaint.jfif" />
+                <h3>Nailpaint</h3>
+                <input type='button' id="item_1" name='5' value="Add to Cart" onclick="access_data('5')" />
+            </div>
+            <div id="item_" class="item_">
+                <img src="eyeliner.jfif" />
+                <h3>Eye Liner</h3>
+                <input type='button' id="item_1" name='6' value="Add to Cart" onclick="access_data('6')" />
+            </div>
+            <div id="item_" class="item_">
+                <img src="lipstick.jfif" />
+                <h3>Lipstick</h3>
+                <input type='button' id="item_1" name='3' value="Add to Cart" onclick="access_data('3')" />
+            </div>
+            <div id="item_" class="item_">
+                <img src="eyeliner.jfif" />
+                <h3>Eye Liner</h3>
+                <input type='button' id="item_1" name='6' value="Add to Cart" onclick="access_data('6')" />
+            </div>
+            <div id="item_" class="item_">
+                <img src="nailpaint.jfif" />
+                <h3>Nailpaint</h3>
+                <input type='button' id="item_1" name='5' value="Add to Cart" onclick="access_data('5')" />
+            </div>
+
+            <div id="item_" class="item_">
+                <img src="conditioner.jfif" />
+                <h3>Conditioner</h3>
+                <input type='button' id="item_1" name='2' value="Add to Cart" onclick="access_data('2')" />
+            </div>
+
+            <div id="item_" class="item_">
+                <img src="foundation.jfif" />
+                <h3>Foundation</h3>
+                <input type='button' id="item_1" name='4' value="Add to Cart" onclick="access_data('4')" />
+            </div>
+
+            <div id="item_" class="item_">
+                <img src="shampoo.jfif" />
+                <h3>Shampoo</h3>
+                <input type='button' id="item_1" name='1' value="Add to Cart" onclick="access_data('1')" />
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

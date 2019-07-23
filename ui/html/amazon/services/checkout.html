@@ -1,0 +1,96 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        const getItem = () => {
+            const _url = 'http://localhost:3476/products/display';
+            fetch(_url).then(products => products.json())
+                .then(products => {
+                    createTable(products);
+                })
+        }
+
+        const createTable = (data) => {
+            let rows = '';
+            data.products.forEach(u => {
+                rows += `<tr>
+                        <td>${u.id}</td>
+                        <td>${u.name}</td>
+                        <td>${u.description}</td>
+                        <td>${u.quant}</td>
+                        <td>${u.price}</td>                             
+                    </tr>`
+            });
+            const _table = `<table style="border : 2px solid red;">
+                            <tr>
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>Description</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                            </tr>
+                            ${rows}
+                        </table>`
+            document.getElementById('item_1').innerHTML = _table;
+        }
+    </script>
+    <style>
+        .main_body {
+            display: block;
+            background-color: #eaeded;
+            height: 800px;
+            width: 1800px;
+        }
+        
+        .heading {
+            display: block;
+            width: 1470px;
+            height: 100px;
+            background-color: rgb(35, 47, 62);
+            ;
+            float: left;
+            margin-bottom: 20px;
+        }
+        
+        .heading h1 {
+            margin-left: 200px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 46px;
+            color: white;
+        }
+        
+        .icon {
+            display: block;
+            height: 100px;
+            width: 85px;
+            background-color: rgb(189, 163, 18);
+            float: left;
+            margin-bottom: 20px;
+        }
+        
+        .icon img {
+            display: block;
+            height: 90px;
+            width: 80px;
+        }
+    </style>
+</head>
+
+<body onload="getItem()">
+    <div class="main_body">
+        <div class="header">
+            <div class="heading">
+                <h1>Amazon Cosmetics</h1>
+            </div>
+            <div class="icon">
+                <a href='#'><img src="cart1.png" /></a>
+            </div>
+        </div>
+
+        <div id="item_1">
+
+        </div>
+    </div>
+</body>
+
+</html>
