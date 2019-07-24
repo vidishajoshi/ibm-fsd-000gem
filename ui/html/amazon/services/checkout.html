@@ -1,37 +1,112 @@
 <html>
 
 <head>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
     <script type="text/javascript">
+        function buy() {
+            let custname = document.getElementById('name').value;
+            let custemail = document.getElementById('email').value;
+            const baseUrl = 'http://localhost:3476/email';
+
+            fetch(baseUrl, {
+                    method: 'POST',
+                    headers: {
+                        'content-type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        from: null,
+                        to: custemail,
+                        subject: 'order sucessfully registered',
+                        body: `<html><body>hello ${custname} <br> 
+                               thank you so much!
+                    </body></html>`
+
+                    })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                });
+
+
+        }
         const getItem = () => {
+            all_ids = []
             const _url = 'http://localhost:3476/products/display';
             fetch(_url).then(products => products.json())
                 .then(products => {
-                    createTable(products);
-                })
-        }
-
-        const createTable = (data) => {
-            let rows = '';
-            data.products.forEach(u => {
-                rows += `<tr>
+                    //create table
+                    let rows = '';
+                    products.products.forEach((u, index) => {
+                        all_ids.push(index + 1)
+                        rows += `<tr>
                         <td>${u.id}</td>
-                        <td>${u.name}</td>
+                        <td id="name${index+1}">${u.name}</td>
                         <td>${u.description}</td>
-                        <td>${u.quant}</td>
-                        <td>${u.price}</td>                             
+                        <td id ="td"><input type="button" id ="btn_sum${index+1}" value="+" /><span id="quant${index+1}">${u.quant}</span><input type="button" id ="btn_diff${index+1}"" value="--" /></td>
+                        <td id="price${index+1}">${u.price}</td>                             
                     </tr>`
-            });
-            const _table = `<table style="border : 2px solid red;">
-                            <tr>
-                                <th>Id</th>
-                                <th>Name</th>
-                                <th>Description</th>
-                                <th>Quantity</th>
-                                <th>Price</th>
+                    });
+                    const _table = `<table style="width:87%; border : 4px solid black;  font-family: arial, sans-serif;
+  border-collapse: collapse;
+">
+                            <tr style="border: 4px solid black;
+                            padding : 8px;">
+                                <th style="border: 4px solid black;
+                                  text-align: left;
+                                   padding: 8px;">Id</th>
+                                <th style="border: 4px solid black;
+                                  text-align: left;
+                                   padding: 8px;">Name</th>
+                                <th style="border: 4px solid black;
+                                  text-align: left;
+                                   padding: 8px;">Description</th>
+                                <th style="border: 4px solid black;
+                                  text-align: left;
+                                   padding: 8px;">Quantity</th>
+                                <th style="border: 2x solid black;
+                                  text-align: left;
+                                   padding: 8px;">Price</th>
                             </tr>
                             ${rows}
-                        </table>`
-            document.getElementById('item_1').innerHTML = _table;
+                        </table>
+                        `
+                    document.getElementById('item_1').innerHTML = _table;
+                    all_ids.forEach((e) => {
+                        let total = 0;
+                        let price_new = 0;
+                        $(`#btn_sum${e}`).click(() => {
+                            // console.log('hello this is jquery');
+                            let num1 = parseInt($(`#quant${e}`).text());
+                            let price_base = parseInt($(`#price${e}`).text());
+                            price_new = parseInt($(`#price${e}`).text());
+                            num1 = num1 + 1;
+                            for (i = 1; i <= num1; i++) {
+                                price_new += price_base;
+                            }
+                            $(`#quant${e}`).text(num1);
+                            $(`#price${e}`).text(price_new);
+                            total = total + price_new;
+                            document.getElementById('gen_bill').value = total;
+                        })
+
+                        $(`#btn_diff${e}`).click(() => {
+                            // console.log('hello this is jquery');
+                            let num1 = parseInt($(`#quant${e}`).text());
+                            let price_base = parseInt($(`#price${e}`).text());
+                            price_new = parseInt($(`#price${e}`).text());
+                            num1 = num1 - 1;
+                            for (i = 1; i <= num1; i++) {
+                                price_new -= price_base;
+                            }
+                            $(`#quant${e}`).text(num1);
+                            $(`#price${e}`).text(price_new);
+                            total = total - price_new;
+                            document.getElementById('gen_bill').value = total;
+                        })
+                    })
+                })
         }
     </script>
     <style>
@@ -90,6 +165,26 @@
         <div id="item_1">
 
         </div>
+        <div id="bill">
+            <label>Total:</label>
+            <input type="text" id="gen_bill" readonly>
+
+        </div>
+        <fieldset>
+            <legend>User Details</legend>
+            <div>
+                <label>Name :</label>
+                <input type="text" id="name" />
+                <br>
+                <br>
+                <label>Email :</label>
+                <input type="email" id="email" />
+                <br>
+                <br>
+                <input type="button" id="btn_final" onclick="buy()" value="Buy" />
+            </div>
+        </fieldset>
+    </div>
     </div>
 </body>
 

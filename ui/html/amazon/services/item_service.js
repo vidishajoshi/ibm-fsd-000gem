@@ -11,15 +11,20 @@ class Service {
     getAllItem() {
         return this.item;
     }
-    _add(product) {
-        this.products.push(product);
+    _add(products) {
+        this.products.push(products);
+        // console.log(products);
         return this.products;
+
     }
     _nextId() {
         return this.products.length + 1;
     }
     getAllProducts() {
         return this.products;
+    }
+    _update() {
+
     }
 }
 

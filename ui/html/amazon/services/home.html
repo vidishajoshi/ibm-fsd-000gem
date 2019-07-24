@@ -4,34 +4,6 @@
 <head>
     <title>Small Amazon</title>
     <script type="text/javascript">
-        // const saveItem = (name, description, quant, price) => {
-        //     const baseUrl = 'http://localhost:3479';
-        //     // api to get the next user id
-        //     fetch(baseUrl + '/products/nextId')
-        //         .then(res => res.json())
-        //         .then(item => {
-        //             const id = res.nextId;
-        //             var obj = []
-        //             item.forEach(element => {
-        //                 obj += item.id
-        //             });
-        //             fetch(baseUrl + '/products/add', {
-        //                     method: 'POST',
-        //                     body: JSON.stringify({
-        //                         id: e,
-        //                         name: obj.name,
-        //                         description: obj.description,
-        //                         quant: obj.quant,
-        //                         price: obj.price
-        //                     })
-        //                 })
-        //                 .then(response => response.json())
-        //                 .then(item => {
-        //                     createTable(item);
-        //                 });
-        //         })
-        // }
-
         const createTable = (data) => {
             let rows = '';
             data.products.forEach(u => {
@@ -58,47 +30,37 @@
 
         function access_data(i) {
             const _url = 'http://localhost:3476/item/display';
+            let arr = '';
             fetch(_url)
                 .then(item => item.json())
                 .then(item => {
-                    const arr = item.item.forEach(u => {
-                        if (u.id == i) {
-                            const name = u.name;
-                            const quant = u.quant;
-                            const price = u.price;
-                            const description = u.description;
-                        }
+                    arr = item.item.find(u => {
+                        return u.id == i
                     });
-                    const url_ = 'http://localhost:3476/products/display';
-                    fetch(url_)
-                        .then(products => products.json())
-                        .then(products => {
-                            const qw = products.products.forEach(f => {
-                                const baseUrl = 'http://localhost:3479';
-                                // api to get the next user id
-                                fetch(baseUrl + '/products/nextId')
-                                    .then(res => res.json())
-                                    .then(item => {
-                                        const id = res.nextId;
-                                        break;
-                                    })
-                            })
-                        });
+                    const baseUrl = 'http://localhost:3476';
+                    // console.log(arr);
                     fetch(baseUrl + '/products/add', {
                             method: 'POST',
+                            headers: {
+                                'content-type': 'application/json'
+                            },
                             body: JSON.stringify({
-                                id: e,
-                                name: name,
-                                description: description,
-                                quant: quant,
-                                price: price
+                                id: arr.id,
+                                name: arr.name,
+                                description: arr.description,
+                                quant: arr.quant,
+                                price: arr.price
                             })
                         })
                         .then(response => response.json())
                         .then(products => {
+                            // console.log(arr.id);
+                            // console.log(arr.name);
+                            // console.log(arr.description);
+                            // console.log(arr.quant);
+                            // console.log(arr.price);
                             createTable(products);
                         });
-
 
                 })
         }

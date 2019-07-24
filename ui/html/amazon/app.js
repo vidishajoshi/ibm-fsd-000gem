@@ -5,6 +5,8 @@ const itemRoutes = require('./routes/item').itemRoutes;
 const productRoutes = require('./routes/products').productRoutes;
 const setContentHeader = require('./services/util').setContentHeader;
 const cors = require('cors');
+const Email = require('./services/email_services').Email;
+const email_services = new Email();
 
 //creating server
 const server = express();
@@ -14,6 +16,16 @@ server.use(parser.json());
 
 //cors using
 server.use(cors());
+
+//api for email 
+server.post('/email', (rq, rs) => {
+    setContentHeader(rs);
+    console.log(rq.body);
+    email_services.emailWithAttachment(rq.body);
+    rs.status(200).json({
+        message: 'Service is running'
+    });
+});
 
 //adding status api
 server.get('/status', (req, res) => {
