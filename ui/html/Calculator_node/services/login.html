@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <script type="text/javascript">
+        function login() {
+            let user_name = document.getElementById('email').value;
+            let pass_word = document.getElementById('pass').value;
+
+            const url_ = 'http://localhost:2564/user/token';
+            fetch(url_, {
+                    method: 'POST',
+                    headers: {
+                        'content-type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        username: user_name,
+                        pass: pass_word
+                    })
+                })
+                .then(res => res.json())
+                .then((res) => {
+                    if (res.message == 'Invalid user credentials') {
+                        document.getElementById('message').innerHTML = res.message;
+                    } else {
+                        localStorage.setItem('token', JSON.stringify(res.token));
+                        document.location = 'calculator.html';
+                    }
+                })
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="main_class">
+        <div class="login_form">
+            <fieldset>
+                <legend>Login</legend>
+                <span id='message'></span>
+                <br>
+                <br>
+                <label>Username :</label>
+                <input type="email" name="email" id="email" placeholder="Enter your mail" />
+                <br><br>
+                <label>Password :</label>
+                <input type="Password" name="pass" id="pass" placeholder="Enter your password" />
+                <br><br>
+                <input type="button" name="btn" value="Login" id="btn" onclick="login()" />
+
+            </fieldset>
+        </div>
+    </div>
+</body>
+
+</html>

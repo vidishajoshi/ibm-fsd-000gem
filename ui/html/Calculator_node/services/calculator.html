@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator Node</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        function calc_load() {
+            if (localStorage.getItem('token') != null) {
+
+            } else {
+                document.location = 'login.html';
+            }
+        }
+
+        function get_num(i) {
+            // let num1 = document.getElementById("btn_num").value;
+            // console.log(i);
+            num1 = document.getElementById('val1').value;
+            num2 = document.getElementById('val2').value;
+            let token_ = localStorage.getItem('token');
+            if (i == '+') {
+                //add api calling
+                fetch(`http://localhost:2564/calc/add/${num1}/${num2}`, {
+                        headers: {
+                            'token': JSON.parse(token_)
+                        }
+                    })
+                    .then(res => res.json())
+                    .then(result => {
+                        // console.log(result);
+                        if (result.message != undefined) {
+                            localStorage.removeItem('token');
+                            alert('session expires!');
+                            document.location = 'login.html'
+                        } else {
+                            document.getElementById('val3').value = result.result;
+                        }
+                    })
+            } else if (i == '-') {
+                //sum api calling
+                fetch(`http://localhost:2564/calc/diff/${num1}/${num2}`, {
+                        headers: {
+                            'token': JSON.parse(token_)
+                        }
+                    })
+                    .then(res => res.json())
+                    .then(result => {
+                        if (result.message != undefined) {
+                            localStorage.removeItem('token');
+                            alert('session expires!');
+                            document.location = 'login.html'
+                        } else {
+                            document.getElementById('val3').value = result.result;
+                        }
+                    })
+            } else if (i == '*') {
+                //mul api calling
+                fetch(`http://localhost:2564/calc/mul/${num1}/${num2}`, {
+                        headers: {
+                            'token': JSON.parse(token_)
+                        }
+                    })
+                    .then(res => res.json())
+                    .then(result => {
+                        if (result.message != undefined) {
+                            localStorage.removeItem('token');
+                            alert('session expires!');
+                            document.location = 'login.html'
+                        } else {
+                            document.getElementById('val3').value = result.result;
+                        }
+
+                    })
+            } else if (i == '^') {
+                let r = Math.pow(num1, num2);
+                document.getElementById('val3').value = r;
+            } else if (i == 'sqrt') {
+                let e = Math.round(Math.sqrt(num1));
+                document.getElementById('val3').value = e;
+            } else {
+                console.log('try again');
+            }
+
+
+        }
+    </script>
+    <style>
+        .calc input[type="text"] {
+            width: 330px;
+        }
+        
+        .main_class {
+            background: peachpuff;
+            height: 800px;
+        }
+        
+        #btn_op1 {
+            width: 65px;
+            height: 40px;
+            margin-left: 10px;
+        }
+        
+        #btn_op2 {
+            width: 65px;
+            height: 40px;
+            margin-left: 10px;
+        }
+        
+        #btn_op3 {
+            width: 65px;
+            height: 40px;
+            margin-left: 10px;
+        }
+        
+        #btn_op4 {
+            width: 65px;
+            height: 40px;
+            margin-left: 10px;
+        }
+        
+        #btn_op5 {
+            width: 65px;
+            height: 40px;
+            margin-left: 10px;
+        }
+        
+        .calc {
+            background: rgb(243, 250, 250);
+            width: 600px;
+            margin-left: 50px;
+        }
+        
+        legend {
+            margin-left: 50px;
+        }
+        
+        .calc label {
+            margin-left: 50px;
+        }
+        
+        input[type='text'] {
+            margin-left: 60px;
+        }
+    </style>
+
+
+</head>
+
+<body onload="calc_load()">
+    <div class="main_class">
+        <div class="calc">
+            <div class="form-group">
+                <fieldset>
+                    <legend>Calculator</legend>
+                    <label>Number 1 :</label>
+                    <input type="text" class="form-control" name="val" id="val1">
+                    <label>Number 2 :</label>
+                    <input type="text" class="form-control" name="val" id="val2">
+                    <label>Result :</label>
+                    <input type="text" class="form-control" name="val" id="val3" readonly>
+                    <br>
+                    <input type="button" class="btn btn-primary " id="btn_op1" value="+" onclick="get_num('+')" />
+                    <input type="button" class="btn btn-secondary " id="btn_op2" value="-" onclick="get_num('-')" />
+                    <input type="button" id="btn_op3" class="btn btn-success " value="*" onclick="get_num('*')" />
+                    <input type="button" id="btn_op4" class="btn btn-info " value="^" onclick="get_num('^')" />
+                    <input type="button" id="btn_op5" class="btn btn-warning " value="sqrt" onclick="get_num('sqrt')" />
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</body>
+
+</htm
