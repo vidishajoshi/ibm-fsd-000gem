@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Driving Licencse</title>
+    <!--Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Bootstrap Css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--javascript files, jquery first, then pooper.js and then bootstrap.js-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        function edit() {
+            document.getElementById('1').disabled = false;
+            document.getElementById('2').disabled = false;
+            document.getElementById('3').disabled = false;
+            document.getElementById('4').disabled = false;
+            document.getElementById('5').disabled = false;
+            document.getElementById('6').disabled = false;
+            document.getElementById('7').disabled = false;
+            document.getElementById('8').disabled = false;
+            document.getElementById('9').disabled = false;
+
+
+        }
+    </script>
+    <style>
+        .main_div {
+            margin: 0px;
+            height: 800px;
+            width: 1650px;
+            background-color: beige;
+            padding-top: 150px;
+        }
+        
+        .display {
+            height: 500px;
+            width: 800px;
+            background-color: rgb(249, 242, 255);
+            margin-left: 400px;
+        }
+        
+        .top_ {
+            display: block;
+            background-color: #ad0418;
+            height: 100px;
+            width: 800px;
+        }
+        
+        .left_ {
+            background-color: white;
+            display: block;
+            height: 400px;
+            width: 300px;
+            float: left;
+        }
+        
+        .code {
+            display: block;
+            height: 400px;
+            width: 120px;
+            float: left;
+            background-color: white;
+            padding-top: 70px;
+        }
+        
+        .code img {
+            margin-left: 10px;
+        }
+        
+        .right_ {
+            padding-top: 15px;
+            display: block;
+            height: 400px;
+            width: 380px;
+            background-color: white;
+            float: left;
+        }
+        
+        .head_pic {
+            display: block;
+            height: 100px;
+            width: 80px;
+            background-color: lightpink;
+            float: left;
+        }
+        
+        .head_pic img {
+            width: 80px;
+            height: 100px;
+        }
+        
+        .head_h {
+            display: block;
+            height: 100px;
+            width: 670px;
+            float: left;
+        }
+        
+        .head_h h3 {
+            font-size: 34px;
+            color: white;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        
+        .head_pen {
+            display: block;
+            height: 100px;
+            width: 50px;
+            background-color: #ad0418;
+            float: left;
+        }
+        
+        .head_pen img {
+            height: 30px;
+            width: 30px;
+            margin-left: 20px;
+        }
+        
+        label {
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(39, 39, 39);
+            margin-left: 20px;
+        }
+        
+        .pic {
+            background-color: white;
+            display: block;
+            height: 250px;
+            width: 300px;
+            float: left;
+        }
+        
+        .sign {
+            background-color: white;
+            display: block;
+            height: 150px;
+            width: 300px;
+            float: left;
+            padding-top: 35px;
+        }
+        
+        .sign img {
+            height: 80px;
+            width: 200px;
+            margin-left: 50px;
+        }
+        
+        .pic img {
+            height: 280px;
+            width: 200px;
+            margin-left: 50px;
+            padding-top: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main_div">
+        <div class="display">
+            <div class="top_">
+                <div class="head_pic">
+                    <img src="logo.jfif">
+                </div>
+                <div class="head_h">
+                    <h3>INDIAN UNION DRIVING LICENCE</h3>
+                    <h3> GOVERMENT OF INDIA</h3>
+                </div>
+                <div class="head_pen">
+                    <a href="#" onclick="edit()"><img src="pen.jfif"></a>
+                </div>
+            </div>
+            <div class="code">
+                <img src="chip.png">
+            </div>
+            <div class="right_">
+
+                <table>
+                    <tr>
+                        <th> <label>Licence No. :</label></th>
+                        <th><input type="text" class="form-control" name="lic_no" id="9" value="NPEOIDU123476" disabled></th>
+
+                    </tr>
+                    <tr>
+                        <th><label>Name :</label></th>
+                        <th><input type="text" name="name" class="form-control" id="8" value="Alisa John" disabled></th>
+                    </tr>
+                    <tr>
+                        <th><label>S/D/W Of:</label></th>
+
+                        <th><input type="text" name="ref" id="1" value="Kim John" class="form-control" disabled></th>
+                    </tr>
+                    <tr>
+                        <th><label>DOB :</label></th>
+                        <th><input type="text" name="name" id="2" class="form-control" value="03-Oct-1985" disabled></th>
+                    </tr>
+                    <tr>
+                        <th><label>Blood Group :</label></th>
+                        <th><input type="text" name="name" id="3" class="form-control" value="O +ve" disabled></th>
+                    </tr>
+                    <tr>
+                        <th><label>Address :</label></th>
+                        <th><input type="text" name="name" id="4" class="form-control" value="Nagawara, Bangalore" disabled></th>
+                    </tr>
+                    <tr>
+                        <th><label>Class of Vehical :</label></th>
+                        <th><input type="text" name="name" id="5" class="form-control" value="MCWG (NT)" disabled></th>
+                    </tr>
+                    <tr>
+                        <th><label>Issue Date :</label></th>
+                        <th><input type="text" name="name" id="6" class="form-control" value="26-06-1997" disabled></th>
+                    </tr>
+                    <tr>
+                        <th><label>Validity :</label></th>
+                        <th><input type="text" name="name" id="7" class="form-control" value="26-06-2007" disabled></th>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="left_">
+                <div class="pic">
+                    <img src="girl.jfif">
+                </div>
+                <div class="sign">
+                    <img src="sign.png">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
