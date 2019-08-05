@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WEb Home</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="home_web.css">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#owl-carousel").owlCarousel();
+        });
+    </script>
+</head>
+
+<body>
+    <div class="div_1">
+        <!-- <div class="div_pic"> -->
+        <div id="owl-carousel">
+            <div> <img src="human.jpg"> </div>
+            <div> <img src="sea.jfif"> </div>
+            <div> <img src="sea1.jfif"> </div>
+            <div> <img src="sea2.jpg"> </div>
+            <div> <img src="sea3.jfif"> </div>
+            <div> <img src="img1.jfif"> </div>
+            <div> <img src="road.jpg"> </div>
+        </div>
+        <!-- </div> -->
+        <div class="div_form">
+            <form>
+                <label>Username</label><br>
+                <input type="text" name="user_name" placeholder="Enter your name" /><br><br>
+                <label>Email</label><br>
+                <input type="email" name="email" placeholder="Enter your email" /><br><br>
+                <label>Password</label><br>
+                <input type="password" name="pass" placeholder="Enter your password" /><br><br>
+                <label>Reset Password</label><br>
+                <input type="password" name="cpass" placeholder="Confirm your password" /><br><br><br>
+                <input type="submit" name="register" value="Register" />
+                <input type="submit" name="login" value="Login" />
+
+            </form>
+            <!-- <img src="forum.jpg" /> -->
+
+        </div>
+    </div>
+</body>
+
+</html>

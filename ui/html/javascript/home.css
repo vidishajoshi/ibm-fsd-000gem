@@ -1,0 +1,38 @@
+.div_1{
+    block-size: 100%;
+padding-bottom: 230px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 250px;
+    display: block;
+    /* background-color: azure; */
+    height: 100%;
+    background-image: url("human.jpg");
+    /* background-repeat: no-repeat; */
+}
+
+.field1{
+background-color: rgb(243, 235, 235);
+border: 2.5px solid black;
+width: 50%;
+margin-top: 20px;
+margin-left: 350px;
+block-size: 50%;
+margin-bottom: 20px;
+}
+.field1 blockquote{
+    padding-left: 19%;
+    font-size: 39px;
+}
+.field2{
+    background-color: rgb(243, 235, 235);
+border: 2.5px solid black;
+width: 50%;
+
+margin-left: 350px;
+block-size: 50%;}
+
+input[type=submit] {
+    padding-left: 10px;
+    size: 70%;
+}

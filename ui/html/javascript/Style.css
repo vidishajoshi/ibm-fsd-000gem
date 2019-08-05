@@ -1,0 +1,27 @@
+.form_input{
+    display: block;
+    width: 12 em;
+    height: 2.5em;
+    margin: 6 4 6 10px;
+
+}
+.form_submit{
+    cursor: pointer;
+    background-image: linear-gradient(to right,)
+}
+.form_input_Shadow{
+    box-shadow: insert 0 0  20 10px rgb(red, green, blue)
+    -webkit
+
+}
+
+.placeholder{
+    font-style: italic;
+}
+.form_input_radius{
+
+}
+.form_submit:hover{
+    color: red;
+}
+ 

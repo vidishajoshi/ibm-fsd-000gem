@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Arrays</title>
+        <script type="text/javascript" src="array.js"></script>
+    <style>
+    input{
+        display: block;
+        border: 1px solid #ade6de;
+        border-radius: 2px;
+        margin-top: 3px;
+        height: 2em;
+        width: 15em;
+    }
+    input[type=button]{
+        cursor: pointer;
+    }
+    input[type=button]:hover{
+        background-color: #8adfff;
+    }
+    </style>
+    </head>
+    <body>
+        <input type="text" name="search" id="search" placeholder="Org is.." />
+        <input type="text" name="findById" id="findById" placeholder="Find by Id" />
+        <input type="button" name="findById" onclick="loadEmployees()" value="Find By Id"/>
+        <input type="button" name="locate" onclick="filterEmps1()" value="Search by Organization"/>
+        <hr>
+        <input type="button" name="localStorage" value="Local Storage" onclick="saveLocalStorage()" />
+        <label>Id :</label><input type="number" id="e_id" name="e_id"/>
+        <label>Name :</label><input type="text" id="e_name" name="e_name"/>
+        <label>Email :</label><input type="email" id="e_email" name="e_email"/>
+        <label>Org :</label><input type="text" id="e_org" name="e_org"/>
+        <input type="button" name="add_emp" onclick="addEmp()" value="ADD new Employee"/>
+        <input type="button" name="viewwebstore" onclick="viewwebstore()" value="view web store"/>
+        <div id="div-emps">
+        </div>
+    </body>
+</html>

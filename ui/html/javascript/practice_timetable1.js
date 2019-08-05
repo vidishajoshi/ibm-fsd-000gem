@@ -1,0 +1,1 @@
+let subject_details = [];

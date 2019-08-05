@@ -1,0 +1,92 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>Practice Timetable</title>
+    <script type="text/javascript" src="practice_timetable.js">
+    </script>
+</head>
+
+<body>
+    <div>
+        <div>
+            <fieldset>
+                <legend>
+                    Trainer Registration
+                </legend>
+                <form>
+                    <label>Name :</label>
+                    <input type="text" name="t_name" id="t_id" placeholder="Enter your Name" />
+                    <br><br>
+
+                    <label>Subject :</label>
+                    <input type="checkbox" id="eng" value="English">English
+                    <input type="checkbox" id="math" value="Maths">Maths
+                    <input type="checkbox" id="hindi" value="Hindi">Hindi
+                    <input type="checkbox" id="sst" value="SST">SST
+                    <input type="checkbox" id="sports " value="Sports">Sports
+                    <input type="checkbox" id="science " value="Science">Science
+                    <br><br>
+
+                    <label>Timing :</label>
+                    <input type="checkbox" id="t1" value="9">9 AM
+                    <input type="checkbox" id="t2" value="10">10 AM
+                    <input type="checkbox" id="t3" value="11">11 AM
+                    <input type="checkbox" id="t4" value="12">12 PM
+                    <input type="checkbox" id="t5" value="02">02 PM
+                    <input type="checkbox" id="t6" value="01">03 PM
+                    <br><br>
+
+                    <input type="button" id="save_trainer" value="Register" onclick="registerTrainer()" />
+                </form>
+            </fieldset>
+        </div>
+        <div>
+            <fieldset>
+                <legend> Timetable generator</legend>
+                <label>Subject</label>
+                <select id="sub">
+                    <option>English</option>
+                    <option>Hindi</option>
+                    <option>Science</option>
+                    <option>SST</option>
+                    <option>Sports</option>
+                    <option>Maths</option>
+                </select>
+
+                <label>Timing</label>
+                <select id="time_t" onselect="gen_time()">
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+                <br><br>
+                <label>Class</label>
+                <select id="class_">
+                    <option>Class A</option>
+                    <option>Class B</option>
+                    <option>Class C</option>          
+                </select>
+
+                <br><br>
+                <label>Trainer</label>
+                <select id="trainer_t">
+                    
+                </select>
+                <br><br>
+                <input type="button" id="btn_gen" value="Generate" onclick="generate_table()" />
+            </fieldset>
+
+        </div>
+        <div>
+            <fieldset>
+                <legend>Timetable</legend>
+            </fieldset>
+        </div>
+    </div>
+</body>
+
+</html>

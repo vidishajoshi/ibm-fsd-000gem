@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Graphics Activity</title>
+        <style type="text/css">
+        .f{
+            display: block;
+            /* background-color: azure; */
+            width: 50%;
+            float: left;
+            padding-left: 20px;
+            margin-right: 20px;
+            background: linear-gradient(99deg, #f6c8c8 20%, #e4a6ed 30%, #b4f5b4 30%,#560443f0 20%);
+            padding-top: 30px;
+
+        }
+        .t{
+            display: block;
+            background-color: bisque;
+            padding-top:30px;
+            
+            margin-left: 10px;
+            padding-right: 10px;
+        }
+        legend{
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-size: 35px;
+        }
+        label{
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        input[type="text"],[type="email"],[type="password"]{
+            height: 30px;
+            width: 350px;
+            padding-left: 20px;
+            border-radius: 5px;
+            border: 2.2px #009cff solid;
+        }
+        input[type="submit"]
+        {
+            height: 40px;
+            width: 140px;
+            border-radius: 3px;
+            border: 1.5px solid black;
+        }
+        .f input[type="submit"]{
+            background: linear-gradient(45deg, #f1a3f9 50%, #f4ddf6 50%);
+        }
+        .t input[type="submit"]{
+            background-color: #b06a0e; 
+        }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div class="f">
+                <fieldset>
+                    <legend>Forms with Gradient</legend>
+                    
+            <label>Username :</label><br>
+               <input type="text" name="user_name" placeholder="Enter your name" /><br>
+               <label>Email</label><br>
+               <input type="email" name="email" placeholder="Enter your email" /><br>
+               <label>Password</label><br>
+               <input type="password" name="pass" placeholder="Enter your password"/><br>
+               <label>Reset Password</label><br>
+               <input type="password" name="cpass" placeholder="Confirm your password"/><br><br>
+               <input type="submit" name="register" value="Register" />
+               <input type="submit" name="login" value="Login" />
+
+                </fieldset>
+            </div>
+            <div class="t">
+                <fieldset>
+                    <legend>Forms without Gradient </legend>
+                    <label>Username</label><br>
+                    <input type="text" name="user_name" placeholder="Enter your name" /><br>
+                    <label>Email</label><br>
+                    <input type="email" name="email" placeholder="Enter your email" /><br>
+                    <label>Password</label><br>
+                    <input type="password" name="pass" placeholder="Enter your password"/><br>
+                    <label>Reset Password</label><br>
+                    <input type="password" name="cpass" placeholder="Confirm your password"/><br><br>
+                    <input type="submit" name="register" value="Register" />
+                    <input type="submit" name="login" value="Login" />
+     
+                </fieldset>
+
+            </div>
+        </div>
+    </body>
+</html>
