@@ -1,0 +1,27 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+    <h1>
+        Welcome to {{ title }}!
+    </h1>
+    <nav>
+        <span>
+            <a [routerLink]="['users/add']">Add User</a>
+        </span>&nbsp;
+        <span>
+            <a [routerLink]="['users/modify']">Modify User</a>
+        </span>&nbsp;
+        <span>
+            <a [routerLink]="['users/list']">View User</a>
+        </span>&nbsp;
+        <span>
+                    <a [routerLink]="['projects/add']">Add Projects</a>
+       </span>&nbsp;
+        <span>
+                    <a [routerLink]="['projects/modify']">Modify Projects</a>
+          </span>&nbsp;
+        <span>
+                    <a [routerLink]="['projects/list']">View Projects</a>
+          </span>
+
+
+        <router-outlet></router-outlet>

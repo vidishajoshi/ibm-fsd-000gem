@@ -1,0 +1,18 @@
+<p>Add Projects!</p>
+<fieldset>
+    <legend>Add Projects</legend>
+    <form #addProject="ngForm" (submit)="addProjects(addProject.value)">
+        <label>Name :</label>
+        <input type='text' placeholder="Enter Projects name" name="name" ngModel>
+        <br>
+        <br>
+        <label>Info :</label>
+        <input type='text' placeholder="Enter Projects info" name="info" ngModel>
+        <br>
+        <br>
+        <label>company :</label>
+        <input type='text' placeholder="Enter  company name" name="cname" ngModel>
+        <br><br>
+        <input type="submit" value="Add">
+    </form>
+</fieldset>
