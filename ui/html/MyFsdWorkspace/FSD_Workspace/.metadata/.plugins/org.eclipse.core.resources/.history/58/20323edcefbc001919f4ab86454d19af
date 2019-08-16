@@ -1,0 +1,11 @@
+package comm.practice;
+
+public class Electronics {
+  
+	private static int item;
+	private int year;
+	
+	public Electronics(){
+		this.year=year;
+	}
+}

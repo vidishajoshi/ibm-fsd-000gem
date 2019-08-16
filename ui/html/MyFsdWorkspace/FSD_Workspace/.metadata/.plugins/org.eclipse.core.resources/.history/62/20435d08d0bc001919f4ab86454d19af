@@ -1,0 +1,29 @@
+package comm.example;
+
+public class ConstructorChaining {
+	private int d;
+	private int m;
+	private int y;
+	
+	private ConstructorChaining() {
+		this(10);
+	}
+
+	private ConstructorChaining(int d) {
+		this(d,20);
+	}
+	private ConstructorChaining(int d,int m) {
+		this(d,m,30);
+	}
+	private ConstructorChaining(int d, int m, int y) {
+		this.d=d;
+		this.m=m;
+		this.y=y;
+	}
+	
+	public int getValues(int d, int m, int y) {
+		return d+m+y;
+	}
+
+
+}

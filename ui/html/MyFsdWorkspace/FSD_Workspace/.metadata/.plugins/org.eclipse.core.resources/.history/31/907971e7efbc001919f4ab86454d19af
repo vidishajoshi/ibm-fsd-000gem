@@ -1,0 +1,14 @@
+package comm.practice;
+
+public class Book {
+
+	private static int item;
+	private String name;
+	private String author;
+	
+  public Book() {
+	  super();
+	  this.author=author;
+	  this.name=name;
+  }
+}

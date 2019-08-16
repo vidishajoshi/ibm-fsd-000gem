@@ -1,0 +1,24 @@
+package comm.practice;
+
+public class ParmanenetEmp extends Employee {
+
+	private int salary;
+	
+	public ParmanenetEmp() {
+		
+	}
+	
+	public ParmanenetEmp(int sal) {
+       this.salary=sal;
+   /*	super('1','Div','smith','Admin');*/
+	}
+	
+
+	@Override
+	protected String getDetails() {
+		// TODO Auto-generated method stub
+		return super.getDetails()+"salary: "+salary;
+	}
+	
+	
+}

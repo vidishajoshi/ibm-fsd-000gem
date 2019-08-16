@@ -1,0 +1,14 @@
+package comm.example.inter;
+
+public class MyStack {
+
+	 private Integer arr[];
+	 
+	 public MyStack() {
+		 
+	 }
+	 
+	 public void pushArr(char c) {
+		 
+	 }
+}

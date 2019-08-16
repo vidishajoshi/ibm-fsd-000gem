@@ -1,0 +1,15 @@
+package comm.example.inter;
+
+public class MyStack {
+
+	 private char arr[];
+	 
+	 public MyStack() {
+		 
+	 }
+	 
+	 public void pushArr(char c) {
+		this.arr=c;
+		
+	 }
+}

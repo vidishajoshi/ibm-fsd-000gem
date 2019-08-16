@@ -1,0 +1,22 @@
+package comm.practice;
+
+public class testStatic extends Product {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+         Product p = null;
+         p = new Book();
+         /*
+         Product p1= new Product();
+         Product p2= new Electronics();
+         Product p3=new Tv();
+         */
+         p=new Tv();
+       /* System.out.println("total item count in product is  : "+p1.getCount());
+        System.out.println("total item count in book is  : "+p.getCount());
+        System.out.println("total item count in electronics is  : "+p2.getCount());
+        System.out.println("total item count in tv is  : "+p3.getCount());
+        */
+	}
+
+}

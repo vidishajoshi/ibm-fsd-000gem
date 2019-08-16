@@ -1,0 +1,43 @@
+package comm.example;
+
+import comm.example.inter.ArrayDemo;
+import comm.example.inter.Dog;
+import comm.example.inter.LivingThings;
+import comm.example.inter.Messaging;
+
+public class Tester {
+	public static void main(String[] args) {
+		/*Flyer flyer= new Bird();
+		flyer.takeOff();
+		flyer=new SuperMan();
+		flyer.takeOff();*/
+	//dynamic method dispatching
+	/*
+	Model m=new Line(0,20);
+	Model m2=new Line(39,49);
+	Model m1=new Line(0,20);
+	System.out.println("are greater:"+m.isGreater(m, m1));
+	System.out.println("are less:"+m.isLess(m, m1));	
+	System.out.println("aRe equal :"+m.isEqual(m, m1));
+	System.out.println("is greater : "+m2.greater(20));
+	*/
+	/*
+	 * 	LivingThings l = new Dog("tom","dog");
+	l.walk();
+	Dog d=new Dog("jims","sjlkdj");
+	d.createLivingThings();*/
+	/*
+		Messaging m= Messaging.createMessagingObject();
+		Messaging m1=Messaging.createMessagingObject("test");
+		String name=m.toString();
+		System.out.println(name);
+	
+	*/
+		
+		ArrayDemo ad = new ArrayDemo();
+		ad.createArr(26);
+		char [] aar = ad.getArray();
+		System.out.println(arr);
+	}
+
+}

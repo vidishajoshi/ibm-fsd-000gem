@@ -1,0 +1,8 @@
+package comm.example.inter;
+
+public class ArrayDemo {
+
+	private Int arr[];
+	//private Integer a =new Integer(value:10);
+	private Integer a= 10;
+}

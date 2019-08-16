@@ -1,0 +1,20 @@
+package comm.example;
+
+public class Tester {
+	public static void main(String[] args) {
+		/*Flyer flyer= new Bird();
+		flyer.takeOff();
+		flyer=new SuperMan();
+		flyer.takeOff();*/
+	//dynamic method dispatching
+	
+	Model m=new Line(0,20);
+	Model m1=new Line(0,20);
+	System.out.println("are greter:"+m.isGreater(m, m1));
+	System.out.println("are less:"+m.isLess(m, m1));	
+	System.out.println("aRe equal :"+m.isEqual(m, m1));
+	System.out.println("is greater : "+m.greater(20));
+	
+	}
+
+}

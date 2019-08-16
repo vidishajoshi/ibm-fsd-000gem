@@ -1,0 +1,16 @@
+package comm.practice;
+
+public class Product {
+	
+	private static int item;
+	private int currentRate;
+	
+	public Product()
+	{
+	  this.currentRate=currentRate;
+	  item++;
+	}
+	
+	
+
+}

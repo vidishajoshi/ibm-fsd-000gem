@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="comm.example.MyDate"/>
+<fullyQualifiedTypeName name="comm.example.ConstructorChaining"/>
+<fullyQualifiedTypeName name="comm.example.inter.Dog"/>
+<fullyQualifiedTypeName name="comm.example.inter.LivingThings"/>
+<fullyQualifiedTypeName name="comm.example.inter.Messaging"/>
+<fullyQualifiedTypeName name="comm.example.inter.ArrayDemo"/>
+</qualifiedTypeNameHistroy>

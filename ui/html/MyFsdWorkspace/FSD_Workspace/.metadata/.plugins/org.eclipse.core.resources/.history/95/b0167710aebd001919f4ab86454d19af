@@ -1,0 +1,29 @@
+package comm.example.inter;
+
+public class MyStack {
+
+	 private char arr[];
+	 private int top=-1;
+	 public MyStack() {
+		 
+	 }
+	 
+	 public void pushArr(char c,int top) {
+		if(top == -1) {
+			top+=top;
+		 this.arr[top]=c;
+		}else {
+			
+	}
+	 }
+	 
+	 public char[] popArr(int top) {
+		 if(top!=-1) {
+			 this.arr[top]=(Character) null;
+			 top-=top;
+			 return arr;
+		 }else {
+			 return arr;
+		 }
+	 }
+}

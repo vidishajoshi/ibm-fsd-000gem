@@ -1,0 +1,53 @@
+package comm.practice;
+
+public class AccountOne {
+	private String accountName;
+	private int amount;
+	
+	public AccountOne() {
+		this.accountName=accountName;
+		this.amount=amount;
+	}
+	
+	public String getAccountName() {
+		return accountName;
+	}
+
+
+
+	public void setAccountName(String accountName) {
+		this.accountName = accountName;
+	}
+
+
+
+	public int getAmount() {
+		return amount;
+	}
+
+
+
+	public void setAmount(int amount) {
+		this.amount = amount;
+	}
+
+
+
+	public static void main(String[] args) {
+		
+		AccountOne ac= null;
+		ac = new AccountOne();
+		
+		AccountOne act=null;
+		act= new AccountOne();
+	
+		ac.setAccountName("Smith");
+        ac.setAmount(908);
+        
+		act.setAccountName("John");
+		act.setAmount(908);
+		
+		System.out.println(ac.equals(act));
+	}
+
+}

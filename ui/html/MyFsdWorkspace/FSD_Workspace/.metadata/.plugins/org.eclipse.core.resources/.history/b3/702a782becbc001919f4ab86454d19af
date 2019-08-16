@@ -1,0 +1,12 @@
+package comm.practice;
+
+public class TesterClass extends ParmanenetEmp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        Employee t=null;
+        t= new ParmanenetEmp(9876);
+        System.out.println(" details :"+t.getDetails());
+	}
+
+}

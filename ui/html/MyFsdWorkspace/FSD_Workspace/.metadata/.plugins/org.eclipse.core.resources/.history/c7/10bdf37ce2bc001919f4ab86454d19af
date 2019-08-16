@@ -1,0 +1,19 @@
+package comm.practice;
+
+public class TempEmp {
+
+private int rate;
+	
+	public TempEmp() {
+		
+	}
+	
+	public TempEmp(int sal) {
+		this.rate=sal;
+	}
+	
+	@override
+	public getDetails() {
+		return getDetails +"Salary : "+rate;
+	}
+}

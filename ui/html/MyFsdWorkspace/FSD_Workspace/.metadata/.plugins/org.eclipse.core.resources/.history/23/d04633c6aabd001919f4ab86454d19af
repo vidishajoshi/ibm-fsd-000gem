@@ -1,0 +1,8 @@
+package comm.example.inter;
+
+public class Stack {
+	private Integer arr[];
+	
+	public void push()
+
+}

@@ -1,0 +1,13 @@
+package comm.practice;
+
+public class testStatic extends Book {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+         Product p = null;
+         p = new Book();
+         
+         
+	}
+
+}
