@@ -1,0 +1,27 @@
+package comm.example.employee;
+
+import java.util.List;
+import java.util.ArrayList;
+
+public class Testing {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 List<Employee> list = new ArrayList<Employee>();
+		 
+		Employee emp=new Employee("sum","dosi",28,89706);
+		Employee emp1=new Employee("susidhm","ddkjosi",28,89706);
+		list.add(emp);
+		list.add(emp1);
+		Object[] obbj=list.toArray();
+		Employee e=null;
+		for(Object o:obbj) {
+			e=(Employee)o;
+			System.out.printf("%-15s %-30s %-10s %-10s\n",e.getName(),e.getDepartment(),e.getAge(),e.getSalary());
+			
+
+		}
+		
+	}
+
+}

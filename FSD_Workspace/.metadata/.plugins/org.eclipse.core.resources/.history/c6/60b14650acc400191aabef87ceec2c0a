@@ -1,0 +1,5 @@
+package comm.file.storedb;
+
+public class FileToDb {
+
+}

@@ -1,0 +1,14 @@
+package comm.example.employee;
+
+public class Testing {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Employee emp=new Employee("sum","dosi",28,89706);
+		
+		
+
+	}
+
+}

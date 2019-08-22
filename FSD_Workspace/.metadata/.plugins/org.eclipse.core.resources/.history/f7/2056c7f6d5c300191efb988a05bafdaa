@@ -1,0 +1,32 @@
+package comm.example.employee;
+
+import java.util.List;
+import java.util.ArrayList;
+
+public class Testing {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 List<Employee> list = new ArrayList<Employee>();
+		/* 
+		Employee emp=
+		System.out.println(emp.getId());
+		Employee emp1=;
+		System.out.println(emp1.getId());
+		Employee emp2=new Employee("sum","dosi",28,90000);
+		System.out.println(emp2.getId());*/
+		list.add(new Employee("sum","dosi",28,89706));
+		list.add(new Employee("susidhm","ddkjosi",28,806));
+		list.add(new Employee("susidhm","ddkjosi",28,806));
+		System.out.println(list);
+		//System.out.println(new Employee("susidhm","ddkjosi",28,806));
+		//Object[] obbj=list.toArray();
+		//Employee e=null;
+		for(Employee o:list) {
+		
+			System.out.printf("%-15s %-30s %-30s %-10s %-10s\n",Employee.getId(),o.getName(),o.getDepartment(),o.getAge(),o.getSalary());
+		}
+		
+	}
+
+}
