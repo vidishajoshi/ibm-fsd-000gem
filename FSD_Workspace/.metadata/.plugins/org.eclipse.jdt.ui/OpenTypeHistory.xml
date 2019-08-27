@@ -1,2 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy/>
+<typeInfoHistroy>
+<typeInfo handle="=unit_testing_demo/C:\/Program Files\/Java\/jdk1.8.0_191\/jre\/lib\/ext\/jfxrt.jar&lt;com.sun.javafx.css(CalculatedValue.class[CalculatedValue" modifiers="49" timestamp="1561969069235"/>
+<typeInfo handle="=unit_testing_demo/src&lt;comm.example{Calculator.java[Calculator" modifiers="1" timestamp="1566792732983"/>
+</typeInfoHistroy>

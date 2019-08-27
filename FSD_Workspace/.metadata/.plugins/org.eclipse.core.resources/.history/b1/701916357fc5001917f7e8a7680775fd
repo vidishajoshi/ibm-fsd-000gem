@@ -1,0 +1,86 @@
+package comm.net.db;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import javax.swing.JTable;
+import javax.swing.JButton;
+import javax.swing.AbstractAction;
+import java.awt.event.ActionEvent;
+import javax.swing.Action;
+
+public class ClientDb extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField textField;
+	private JTable table;
+	private final Action action = new SwingAction();
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					ClientDb frame = new ClientDb();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public ClientDb() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblEnterId = new JLabel("Enter Id");
+		lblEnterId.setBounds(43, 58, 46, 14);
+		contentPane.add(lblEnterId);
+		
+		textField = new JTextField();
+		textField.setBounds(163, 55, 86, 20);
+		contentPane.add(textField);
+		textField.setColumns(10);
+		
+		JLabel lblEmployee = new JLabel("Employee");
+		lblEmployee.setBounds(43, 109, 46, 14);
+		contentPane.add(lblEmployee);
+		
+		table = new JTable();
+		table.setBounds(163, 106, 197, 48);
+		contentPane.add(table);
+		
+		JButton btnLoadEmp = new JButton("Load Emp");
+		btnLoadEmp.setAction(action);
+		btnLoadEmp.setBounds(119, 197, 89, 23);
+		contentPane.add(btnLoadEmp);
+		
+		JLabel lblEmployeeDetails = new JLabel("Employee Details");
+		lblEmployeeDetails.setBounds(119, 11, 116, 14);
+		contentPane.add(lblEmployeeDetails);
+	}
+
+	private class SwingAction extends AbstractAction {
+		public SwingAction() {
+			putValue(NAME,"Load Emp");
+			putValue(SHORT_DESCRIPTION, "Some short description");
+		}
+		public void actionPerformed(ActionEvent e) {
+		}
+	}
+}

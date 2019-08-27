@@ -1,0 +1,26 @@
+
+package comm.example;
+
+public class Calculator {
+	
+	private int x;
+	private int y;
+	private int result;
+	public Calculator() {
+		super();
+	}
+
+	public int addMethod(int x, int y) {
+		this.x=x;
+		this.y=y;
+		return x+y;
+	}
+	
+	public int greaterThan(int x,int y) {
+		if(x>y) {
+			return 1;
+		}else {
+			return -1;
+		}
+	}
+}

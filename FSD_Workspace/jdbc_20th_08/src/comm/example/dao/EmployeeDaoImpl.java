@@ -66,7 +66,18 @@ public class EmployeeDaoImpl implements EmployeeDao {
 
 	@Override
 	public Employee getEmployeeById(int id) {
-		// TODO Auto-generated method stub
+	     try {
+	    	 PreparedStatement stmt=connection.prepareStatement("select * from employee where id=?");
+	    	 stmt.setInt(1,id);
+	    	 ResultSet resultSet = stmt.executeQuery();
+	    	 resultSet.next();
+	    	 Employee e = new Employee(resultSet.getInt(1),resultSet.getString(2),resultSet.getString(3),resultSet.getString(4));
+	    	 
+	    	 System.out.println(e.toString());
+	    	 return e;
+	     }catch(SQLException e) {
+	    	 e.printStackTrace();
+	     }
 		return null;
 	}
 

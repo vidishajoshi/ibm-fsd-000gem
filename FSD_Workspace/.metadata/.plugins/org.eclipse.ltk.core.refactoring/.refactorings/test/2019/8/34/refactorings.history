@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;comm.net.db&apos; to &apos;23rd_1st/src&apos;&#x0D;&#x0A;- Original project: &apos;test&apos;&#x0D;&#x0A;- Destination element: &apos;23rd_1st/src&apos;&#x0D;&#x0A;- Original element: &apos;test/src/comm.net.db&apos;" description="Copy package" destination="=23rd_1st/src" element1="/src&lt;comm.net.db" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1566549503228" version="1.0"/>
+</session>

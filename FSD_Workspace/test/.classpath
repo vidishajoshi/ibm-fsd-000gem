@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/12-08-2019_FSD"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/13-08-2019_FSD"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/21-08-2019_FSD"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/22-Aug-2019"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Java_swing"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/jdbc_20th_08"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

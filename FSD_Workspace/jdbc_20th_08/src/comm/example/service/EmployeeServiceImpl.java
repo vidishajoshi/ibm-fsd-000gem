@@ -31,7 +31,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 	@Override
 	public Employee getEmployeeById(int id) {
 
-		return null;
+		return dao.getEmployeeById(id);
 	}
 	
 	public void getMetadata()

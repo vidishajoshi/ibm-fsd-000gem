@@ -1,0 +1,49 @@
+package comm.example.net;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class NetworkingServer {
+
+	public static void main(String[] args) throws IOException {
+		ServerSocket server=null;
+		Socket client;
+		
+		//default port no we are going to use
+		int portNumber=2345;
+		
+		//create server side socket
+		try {
+			server=new ServerSocket(portNumber);
+			
+		}catch(IOException ie) {
+			System.out.println("Cannot open socket." +ie);
+			System.exit(1);
+		}
+		System.out.println("server socket is created "+server);
+
+		//wait for the data from the client and reply
+		while(true) {
+			//Listen for a connection to be made to this socket and accept it.
+			System.out.println("Waiting for connect request!!");
+			client= server.accept();
+			System.out.println("Connect request is accepted!!");
+			String clientHost=client.getInetAddress().getHostAddress();
+			int clientPort = client.getPort();
+			System.out.println("client host : "+clientHost + " client port: "+clientPort);
+			
+			//read data from client
+			InputStream ClientIn = client.getInputStream();
+			BufferedReader br=new BufferedReader(new InputStreamReader(ClientIn));
+			
+				
+			
+			
+		}
+	}
+
+}

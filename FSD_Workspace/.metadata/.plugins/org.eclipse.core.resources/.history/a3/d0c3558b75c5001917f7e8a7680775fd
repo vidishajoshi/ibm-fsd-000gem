@@ -1,0 +1,10 @@
+package comm.net.db;
+
+public class NetworkServer {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

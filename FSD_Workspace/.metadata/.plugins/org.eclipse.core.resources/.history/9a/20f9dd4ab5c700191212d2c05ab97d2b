@@ -1,0 +1,16 @@
+
+package comm.example;
+
+public class Calculator {
+	
+	private int x;
+	private int y;
+	private int result;
+	public Calculator() {
+		super();
+	}
+
+	public int addMethod(int x, int y) {
+		
+	}
+}
