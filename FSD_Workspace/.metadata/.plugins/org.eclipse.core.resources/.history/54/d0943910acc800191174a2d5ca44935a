@@ -1,0 +1,15 @@
+package comm.example.factory;
+
+import javax.naming.Context;
+
+public class MyConnectionFactory {
+	
+	
+	public static Connection getMySqlConnectionForHr() {
+		try {
+		   Context initContext = new InitialContext();
+		   Object o = initContext.lookup("java:/comp/env/jdbc/mysql")
+		}
+	}
+
+}

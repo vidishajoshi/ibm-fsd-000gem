@@ -149,7 +149,21 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="E:\FSD_Workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/></Host>
+      <Context docBase="E:\FSD_Workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="E:\FSD_Workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\soccer_league_27th_8" path="/soccer_league" reloadable="true" source="org.eclipse.jst.jee.server:soccer_league_27th_8">
+
+    <!-- Default set of monitored resources. If one of these changes, the    -->
+    <!-- web application will be reloaded.                                   -->
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+    <WatchedResource>${catalina.base}/conf/web.xml</WatchedResource>
+
+    <!-- Uncomment this to disable session persistence across Tomcat restarts -->
+    <!--
+    <Manager pathname="" />
+    -->
+<Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" maxIdle="30" maxTotal="100" maxWaitMillis="10000" name="jdbc/mysql" password="root" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/hr" username="root"/>
+
+
+</Context></Host>
     </Engine>
   </Service>
 </Server>
