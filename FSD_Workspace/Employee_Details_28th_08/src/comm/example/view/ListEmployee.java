@@ -57,7 +57,7 @@ public class ListEmployee extends HttpServlet {
 		
    		}
    		out.println("</tr></table>");
-		out.println("</br><a href=\"add_employee.view\"><button>Back</button></a>");
+		out.println("</br><a href=\"main_page.html\"><button>Back</button></a>");
    		
    		
    	}

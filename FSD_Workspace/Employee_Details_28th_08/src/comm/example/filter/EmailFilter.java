@@ -58,7 +58,7 @@ private String password;
 			pst = connection.prepareStatement("select * from employees where eEmail ='" + email + "' and ePass= '"+password+"'");
 			ResultSet rs = pst.executeQuery();
 			if (rs.next()) {
-				System.out.println(rs.getString(1));
+			//	System.out.println(rs.getString(1));
 				chain.doFilter(request, response);
 			}
 		} catch (SQLException e) {
