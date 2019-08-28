@@ -1,0 +1,23 @@
+package comm.example.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+import comm.example.factory.MyConnFactory;
+
+public class EmployeeDaoImpl {
+	private MyConnFactory factory = null;
+	private Connection connection = null;
+	private PreparedStatement pStatement = null;
+	private Statement statement = null;
+	private ResultSet resultSet = null;
+	
+	public EmployeeDaoImpl() {
+		super();
+		factory= MyConnFactory.createObject();
+	}
+	
+	
+}

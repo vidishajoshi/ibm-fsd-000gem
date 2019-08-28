@@ -1,0 +1,90 @@
+package comm.example.view;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.List;
+
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebInitParam;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet(
+		urlPatterns = { "/add_employee.view" }, 
+		initParams = { 
+				@WebInitParam(name = "country_list", value = "Select,USA,UK,India,France,SA")
+		})
+public class AddEmployeeServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	private String sList;       
+	
+	@Override
+	public void init(ServletConfig config) throws ServletException {
+		// TODO Auto-generated method stub
+		super.init(config);
+		sList=config.getInitParameter("season-list");
+	}
+
+    public AddEmployeeServlet() {
+        super();
+   }
+
+   	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+   		doProcess(request, response);
+   	}
+
+   	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+   		doProcess(request, response);
+   	}
+   	protected void doProcess(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+   		response.setContentType("text/html");
+   		PrintWriter out=response.getWriter();
+   		
+   		out.println("<html><body>");
+   		
+   		@SuppressWarnings("unchecked")
+   		List<String> err=(List<String>) request.getAttribute("ERROR");
+   		if(err!=null)
+   		{
+   			for(String s:err)
+   			{
+   				out.println("<font color='red'>"+s+"</font><br/>");
+   			}
+   		}
+   		
+   		out.println("<form action='add_emp.do' method='post'>");
+   		out.println("<div class=\"form-group\">");
+   		out.println("<label for=\"id\">Id :</label>");
+   		out.println("<input type=\"number\" class=\"form-control\" id=\"id\" placeholder=\"Enter ID\">");
+   		out.println("</div>");
+   		
+   		out.println("<div class=\"form-group\">");
+   		out.println("<label for=\"Name\">Name :</label>");
+   		out.println("<input type=\"text\" class=\"form-control\" id=\"name\" placeholder=\"Enter Name\">");
+   		out.println("</div>");
+   		
+   		out.println("<div class=\"form-group\">");
+   		out.println("<label for=\"Email\">Email :</label>");
+   		out.println("<input type=\"email\" class=\"form-control\" id=\"email\" aria-describedby=\"emailHelp\" placeholder=\"Enter Email\">");
+   		out.println("</div>");
+   		
+   		out.println("<div class=\"form-group\">");
+   		out.println("<label for=\"Password\">Password :</label>");
+   		out.println("<input type=\"password\" class=\"form-control\" id=\"password\" placeholder=\"Enter password\">");
+   		out.println("</div>");
+   		//String sList=getServletConfig().getInitParameter("season-list");
+   		String arrSList[]=sList.split(",");
+   		out.println("<select name='season'><option value='Unknown'>Unknown</option>");
+   		for(String str:arrSList)
+   		{
+   			out.println("<option value='"+str+"'"+">"+str+"</option>");
+   		}
+   		
+   		out.println("</select><br/><input type='submit' value='add league'></form></body></html>");
+   	}
+}

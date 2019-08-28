@@ -57,10 +57,15 @@ public class ListAllLeague extends HttpServlet {
 	Connection connection = MyConnectionFactory.getMySqlConnectionForHr();
     Statement stmt=connection.createStatement();
 	resultSet = stmt.executeQuery("select * from league");
+	out.println("<table><tr><th>Title</th><th>Season</th><th>Year</th><th>uId</th><th>Delete</th></tr>");
 	while(resultSet.next()) {
-		out.println(resultSet.getObject(1).toString()+","+resultSet.getObject(2).toString()+","+resultSet.getObject(3)+","+resultSet.getObject(4));
+		out.print("<tr><td>"+resultSet.getString(1)+"</td><td>"+resultSet.getString(2)+"</td><td>"+resultSet.getInt(3)+"</td><td>"+resultSet.getInt(4)+"</td>");
+		out.print("<td>");
+		out.print("</br><a href=\"delete_servlet.view?id=uid\"><button>Delete</button></a>");
+		out.print("</td></tr>");
 	}
-		
+	out.println("</table>");
+	int uid=resultSet.getInt(4);
 	}
 
 

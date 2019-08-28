@@ -7,7 +7,7 @@ public class League implements Serializable{
 	/**
 	 * 
 	 */
-	public static int serialVersionUID = 100;
+	public static int serialVersionUID = 2000;
 	private String title;
 	private String season;
 	private int year;

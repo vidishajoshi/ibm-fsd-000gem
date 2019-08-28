@@ -149,7 +149,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="E:\FSD_Workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="E:\FSD_Workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\soccer_league_27th_8" path="/soccer_league" reloadable="true" source="org.eclipse.jst.jee.server:soccer_league_27th_8">
+      <Context docBase="E:\FSD_Workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="E:\FSD_Workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Employee_Details_28th_08" path="/Employee_Details" reloadable="true" source="org.eclipse.jst.jee.server:Employee_Details_28th_08">
 
     <!-- Default set of monitored resources. If one of these changes, the    -->
     <!-- web application will be reloaded.                                   -->
