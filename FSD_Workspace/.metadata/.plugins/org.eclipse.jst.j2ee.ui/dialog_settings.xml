@@ -6,6 +6,8 @@
 		<item value="Apache Tomcat v8.5"/>
 	</list>
 	<list key="J2EE_EXPORT_JST_WEB">
+		<item value="C:\apache-tomcat-8.5.45\apache-tomcat-8.5.45\webapps\Employee_Details_28th_08.war"/>
+		<item value="C:\apache-tomcat-8.5.45\apache-tomcat-8.5.45\webapps\Jsp_demo_29th_aug.war"/>
 		<item value="C:\apache-tomcat-8.5.45\apache-tomcat-8.5.45\webapps\soccer_league_27th_8.war"/>
 		<item value="C:\apache-tomcat-8.5.45\apache-tomcat-8.5.45\webapps\servlet_demo_26_08.war"/>
 	</list>

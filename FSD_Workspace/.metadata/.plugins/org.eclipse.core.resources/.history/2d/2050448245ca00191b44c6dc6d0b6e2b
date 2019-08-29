@@ -1,0 +1,46 @@
+<%@page import="java.sql.SQLException"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.PreparedStatement"%>
+<%@page import="comm.example.factory.MyConnFactory"%>
+<%@page import="java.sql.Connection"%>
+<%@page import="comm.example.model.ValidateUserBean"%>
+<jsp:useBean id="u" class="comm.example.model.ValidateUserBean" scope="application">
+<jsp:setProperty name="u" property="*"/>
+</jsp:useBean>
+
+<%
+ValidateUserBean bean = (ValidateUserBean)application.getAttribute("u");
+String user=u.getUser();
+String password = u.getPassword();
+Connection connection = MyConnFactory.getMyConnection();
+
+PreparedStatement pst;
+try {
+	pst = connection.prepareStatement("select eEmail,ePass from employees");
+	ResultSet rs = pst.executeQuery();
+	while(rs.next()){
+		boolean result=rs.getString(1).equals(user);
+		boolean result1=rs.getString(2).equals(password);
+	     if(result==true && result1==true){
+	       out.println("You are a Valid user.");
+	     }
+	}
+} catch (SQLException e) {
+	// TODO Auto-generated catch block
+	e.printStackTrace();
+}
+%>
+<body>
+
+  <br>
+<jsp:getProperty name="u" property="user" />
+
+ You entered user name as <jsp:getProperty name="u" property="user" /> <br>
+
+  You entered user password as <jsp:getProperty name="u" property="password" /> <br>
+
+ 
+
+  <b>Thank You</b>
+</body>
+</html>

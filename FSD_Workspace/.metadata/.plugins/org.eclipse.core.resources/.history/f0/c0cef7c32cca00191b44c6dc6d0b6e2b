@@ -1,0 +1,21 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<%
+League league = (League) request.getAttribute("SUCCESS");
+out.println("Title : "+league.getTitle()+"<br/>"+"Year : "+league.getYear()
++"<br/>Season : "+league.getSeason());
+out.println("</br><a href=\"add_league.html\"><button>Back</button></a>");
+%>
+
+</body>
+</html>

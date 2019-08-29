@@ -1,0 +1,23 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<jsp:useBean id="u" class="comm.example.model.ValidateUserBean" scope="request">
+<jsp:setProperty name="u" property="*"/>
+</jsp:useBean>
+ You entered user name as <jsp:getProperty name="u" property="user" /> <br>
+
+  You entered user password as <jsp:getProperty name="u" property="pass" /> <br>
+
+  <br>
+
+  You are a <%= u.validate("Admin", "Admin") %> user.  <br>
+
+  <b>Thank You</b>
+</body>
+</html>

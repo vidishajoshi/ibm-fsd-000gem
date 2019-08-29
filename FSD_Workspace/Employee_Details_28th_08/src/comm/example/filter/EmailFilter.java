@@ -26,7 +26,7 @@ import comm.example.factory.MyConnFactory;
 				DispatcherType.INCLUDE, 
 				DispatcherType.ERROR
 		}
-					, urlPatterns = { "/add_employee.view" })
+					, urlPatterns = {  })
 public class EmailFilter implements Filter {
 private String email;
 private String password;

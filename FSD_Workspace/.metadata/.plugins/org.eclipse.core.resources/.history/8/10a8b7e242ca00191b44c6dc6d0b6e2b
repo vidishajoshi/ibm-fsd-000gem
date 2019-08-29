@@ -1,0 +1,41 @@
+<%@page import="java.sql.SQLException"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.PreparedStatement"%>
+<%@page import="comm.example.factory.MyConnFactory"%>
+<%@page import="java.sql.Connection"%>
+<%@page import="comm.example.model.ValidateUserBean"%>
+<jsp:useBean id="u" class="comm.example.model.ValidateUserBean" scope="application">
+<jsp:setProperty name="u" property="*"/>
+</jsp:useBean>
+<jsp:getProperty name="u" property="user" />
+
+ You entered user name as <jsp:getProperty name="u" property="user" /> <br>
+
+  You entered user password as <jsp:getProperty name="u" property="password" /> <br>
+
+<%
+ValidateUserBean bean = (ValidateUserBean)application.getAttribute("u");
+String user=u.getUser();
+String password = u.getPassword();
+Connection connection = MyConnFactory.getMyConnection();
+
+PreparedStatement pst;
+try {
+	pst = connection.prepareStatement("select * from employees where eEmail ='" + user + "' and ePass= '"+password+"'");
+	ResultSet rs = pst.executeQuery();
+	String result =u.validate(rs.getString(1),rs.getString(2));
+	out.println("You are a "+result+" user.");
+} catch (SQLException e) {
+	// TODO Auto-generated catch block
+	e.printStackTrace();
+}
+%>
+<body>
+
+  <br>
+
+ 
+
+  <b>Thank You</b>
+</body>
+</html>

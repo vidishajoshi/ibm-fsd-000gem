@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -38,7 +39,8 @@ public class ErrorServlet extends HttpServlet {
 			out.println("<h1 style='color:red'>"+s+"</h1><br/>");
 			
 		}
-		out.println("<a href=\"add_league.html\"><button>Back</button></a>");
+		RequestDispatcher view=request.getRequestDispatcher("addLeague.jsp");
+		view.forward(request, response);
 	}
 
 }

@@ -72,19 +72,19 @@ public class AddLeagueController extends HttpServlet {
 		{
 			request.setAttribute("SUCCESS", new League(title, season, iYear));
 			Connection connection= MyConnectionFactory.getMySqlConnectionForHr();
-		     PreparedStatement pst=connection.prepareStatement("insert into league(title,season,year,uid) values(?,?,?,?)");
-		     pst.setString(1, title);
-		     pst.setString(2,season);
-		     pst.setInt(3,iYear);
-		     pst.setInt(4,League.serialVersionUID++);
-		     pst.executeUpdate();
+		    PreparedStatement pst=connection.prepareStatement("insert into league(title,season,year,uid) values(?,?,?,?)");
+		    pst.setString(1, title);
+		    pst.setString(2,season);
+		    pst.setInt(3,iYear);
+		    pst.setInt(4,League.serialVersionUID++);
+		    pst.executeUpdate();
 		     
-			RequestDispatcher  view=request.getRequestDispatcher("success.view");
+			RequestDispatcher  view=request.getRequestDispatcher("success.jsp");
 			view.forward(request, response);
 		}
 		else {
 			request.setAttribute("ERROR", errMsgs);
-			RequestDispatcher view=request.getRequestDispatcher("/add_league_view.view");
+			RequestDispatcher view=request.getRequestDispatcher("error.view");
 			view.forward(request, response);
 		}
 		

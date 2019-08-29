@@ -34,7 +34,7 @@ public class SuccessServlet extends HttpServlet {
 		League league = (League) request.getAttribute("SUCCESS");
 		out.println("Title : "+league.getTitle()+"<br/>"+"Year : "+league.getYear()
 		+"<br/>Season : "+league.getSeason());
-		out.println("</br><a href=\"add_league.html\"><button>Back</button></a>");
+		//out.println("</br><a href=\"add_league.html\"><button>Back</button></a>");
 
 	}
 }
