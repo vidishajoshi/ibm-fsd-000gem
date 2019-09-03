@@ -1,0 +1,81 @@
+package controller;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.resource.beans.container.internal.CdiBasedBeanContainer;
+
+import entity.CD;
+import entity.InternationalCD;
+import entity.SpecialEditionCD;
+
+/**
+ * Servlet implementation class SaveCD
+ */
+public class SaveCD extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public SaveCD() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+   		doProcess(request, response);
+   	}
+
+   	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+   		doProcess(request, response);
+   	}
+   	protected void doProcess(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+   		response.setContentType("text/html");
+   		PrintWriter out=response.getWriter();
+   		
+   		HttpSession session=request.getSession();
+   		CD data=(CD) session.getAttribute("cd");
+   		String cd_type= (String) session.getAttribute("cd_type");
+   		
+   		String feature=request.getParameter("newfeature");
+   		
+
+   		SessionFactory factory = new Configuration().configure("hibernate.cfg.xml").
+				addAnnotatedClass(CdiBasedBeanContainer.class).addAnnotatedClass(InternationalCD.class).
+				addAnnotatedClass(SpecialEditionCD.class).buildSessionFactory();
+   		
+   		if(cd_type.equals("international")) {
+   			String lang=request.getParameter("languages");
+   	   		String reg = request.getParameter("region");
+   	   		int region=Integer.parseInt(reg);
+		Session session1=factory.openSession();
+   	    session1.beginTransaction();
+   	    session1.persist(data);
+   	    session1.persist(new InternationalCD(data.getTitle(),data.getArtist(),data.getPurchasedate(),data.getCost(), lang, region));
+   		session1.getTransaction().commit();
+   		out.print("international added");
+   		
+   	}else if(cd_type.equals("special")) {
+   		
+		Session session1=factory.openSession();
+   	    session1.beginTransaction();
+   	    session1.persist(data);
+   	    session1.persist(new SpecialEditionCD(data.getTitle(),data.getArtist(),data.getPurchasedate(),data.getCost(), feature));
+   		session1.getTransaction().commit();
+   		out.print("special added");
+   	}
+
+}
+}

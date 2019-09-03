@@ -1,0 +1,32 @@
+package com.ibm.fsd.Dao;
+
+import java.util.List;
+
+import com.ibm.fsd.Model.Student;
+
+public class StudentDaoImpl implements StudentDao {
+
+	@Override
+	public void createEmployee(Student student) {
+		
+	}
+
+	@Override
+	public List<Student> getAllEmployees() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Student getEmployeeById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void getConnectionInfo() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

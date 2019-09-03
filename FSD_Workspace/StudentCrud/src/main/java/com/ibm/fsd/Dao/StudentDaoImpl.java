@@ -8,7 +8,9 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
 
-import com.ibm.fsd.model.Student;
+import com.ibm.fsd.Model.Student;
+
+
 
 public class StudentDaoImpl implements StudentDao {
 
@@ -51,6 +53,18 @@ public class StudentDaoImpl implements StudentDao {
 
 	@Override
 	public Student getEmployeeById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void createEmployee(com.ibm.fsd.Dao.Student student) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public com.ibm.fsd.Dao.Student getEmployeeById(int id) {
 		// TODO Auto-generated method stub
 		return null;
 	}

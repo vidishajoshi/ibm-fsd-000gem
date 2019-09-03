@@ -1,0 +1,12 @@
+package com.ibm.fsd.Dao;
+
+import java.util.List;
+
+public interface StudentDao {
+	
+	public void createEmployee(Student employee);
+	public List<Employee> getAllEmployees();
+	public Employee getEmployeeById(int id);
+	public void getConnectionInfo();
+
+}

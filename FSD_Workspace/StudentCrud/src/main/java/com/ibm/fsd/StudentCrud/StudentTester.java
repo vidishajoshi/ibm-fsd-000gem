@@ -9,7 +9,8 @@ import org.hibernate.cfg.Configuration;
 
 import com.ibm.fsd.Dao.StudentDao;
 import com.ibm.fsd.Dao.StudentDaoImpl;
-import com.ibm.fsd.model.Student;
+import com.ibm.fsd.Model.Student;
+
 
 public class StudentTester {
 

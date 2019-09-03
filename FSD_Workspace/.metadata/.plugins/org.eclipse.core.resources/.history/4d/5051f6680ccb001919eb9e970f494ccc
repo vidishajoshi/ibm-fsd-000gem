@@ -1,0 +1,5 @@
+package com.ibm.fsd.Dao;
+
+public interface StudentDao {
+
+}

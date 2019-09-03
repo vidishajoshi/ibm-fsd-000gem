@@ -1,0 +1,23 @@
+package com.ibm.fsd.StudentCrud;
+
+import java.util.Scanner;
+
+import com.ibm.fsd.Dao.StudentDao;
+import com.ibm.fsd.Dao.StudentDaoImpl;
+import com.ibm.fsd.Model.Student;
+
+public class StudentTester {
+
+	public static void main(String[] args) {
+		StudentDao stDao=new StudentDaoImpl();
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Welcome to this student crud portal!!");
+		System.out.println("1. Add new Student");
+		System.out.println("2. Display all Student");
+        int i=sc.nextInt();
+		switch(i) {
+		case 1:stDao.createEmployee(new Student(1,"mark","john","mark@g.com"));
+		}
+	}
+}

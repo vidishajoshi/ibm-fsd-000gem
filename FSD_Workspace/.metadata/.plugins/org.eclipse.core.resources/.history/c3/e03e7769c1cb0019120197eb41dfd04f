@@ -1,0 +1,17 @@
+package com.ibm.fsd.StudentCrud;
+
+import java.util.Scanner;
+
+import com.ibm.fsd.Dao.StudentDao;
+import com.ibm.fsd.Dao.StudentDaoImpl;
+
+public class StudentTester {
+
+	public static void main(String[] args) {
+		StudentDao stDao=new StudentDaoImpl();
+		Scanner sc=new Scanner(System.in);
+		
+		
+	}
+
+}

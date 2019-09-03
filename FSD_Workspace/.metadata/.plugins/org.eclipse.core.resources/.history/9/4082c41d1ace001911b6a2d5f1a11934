@@ -1,0 +1,11 @@
+package com.ibm.fsd.dao;
+
+public class InstructorDaoImpl implements InstructorDao {
+private static Session session=null;
+
+{
+	session=InstructorFactory.getMySession();
+}
+
+public void createInstructor(Instructor inst)
+}

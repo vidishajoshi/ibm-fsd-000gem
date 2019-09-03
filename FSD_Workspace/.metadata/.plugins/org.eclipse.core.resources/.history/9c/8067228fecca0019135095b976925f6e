@@ -1,0 +1,5 @@
+package com.id.fsd.my_first_maven_demo;
+
+public class Employee {
+
+}

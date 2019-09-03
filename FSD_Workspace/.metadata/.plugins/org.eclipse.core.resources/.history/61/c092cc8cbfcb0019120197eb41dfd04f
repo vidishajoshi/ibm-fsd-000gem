@@ -1,0 +1,62 @@
+package com.ibm.fsd.Dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.query.Query;
+
+import com.ibm.fsd.Model.Student;
+
+public class StudentDaoImpl implements StudentDao {
+
+	@Override
+	public void createEmployee(Student student) {
+		try {
+			SessionFactory factory=new Configuration().configure("hibernate.cfg.xml").
+					addAnnotatedClass(Student.class).buildSessionFactory();
+			Session session=factory.openSession();
+			Student st=new Student(1,"mark","john","mark@g.com");
+			session.getTransaction().begin();
+			session.persist(st);
+			System.out.println("student inserted!!");
+			session.getTransaction().commit();
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	@Override
+	public List<Student> getAllEmployees() {
+		List<Student> list=new ArrayList<Student>();
+		try {
+			SessionFactory factory = new Configuration().configure("hibernate.cfg.xml").
+					addAnnotatedClass(Student.class).buildSessionFactory();
+			Session session= factory.openSession();
+			Query query=session.createQuery("from Student");
+			list=query.getResultList();
+			for(Student s:list) {
+				System.out.println(s);
+			}
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		return list;
+	}
+
+	@Override
+	public Student getEmployeeById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void getConnectionInfo() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

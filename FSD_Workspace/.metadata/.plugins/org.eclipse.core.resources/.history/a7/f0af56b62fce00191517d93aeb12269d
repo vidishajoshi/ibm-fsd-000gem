@@ -1,0 +1,28 @@
+package entity;
+
+import java.sql.Date;
+
+public class CD {
+int id;
+String title;
+String artist;
+Date purchaseDate;
+double cost;
+
+public CD() {
+	super();
+}
+
+public CD(String title, String artist, Date purchaseDate, double cost) {
+	super();
+	
+	this.title = title;
+	this.artist = artist;
+	this.purchaseDate = purchaseDate;
+	this.cost = cost;
+}
+
+
+
+
+}

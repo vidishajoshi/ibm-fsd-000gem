@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;jsp_webapp&apos;&#x0D;&#x0A;- Original project: &apos;jsp_webapp&apos;&#x0D;&#x0A;- Original element: &apos;jsp_webapp/src/main/java/com.ibm.fsd.factory&apos;" description="Delete element" element1="/src\/main\/java&lt;com.ibm.fsd.factory" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1567500379564" subPackages="false" version="1.0"/>
+</session>

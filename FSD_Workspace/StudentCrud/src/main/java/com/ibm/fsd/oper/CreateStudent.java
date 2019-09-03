@@ -4,7 +4,9 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-import com.ibm.fsd.model.Student;
+import com.ibm.fsd.Model.Student;
+
+
 
 public class CreateStudent {
 
