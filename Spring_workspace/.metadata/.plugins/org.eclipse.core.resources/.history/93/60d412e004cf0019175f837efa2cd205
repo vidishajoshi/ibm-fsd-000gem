@@ -1,0 +1,10 @@
+package beans;
+
+public class FortuneService implements FortuneInterface{
+
+	public String getFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

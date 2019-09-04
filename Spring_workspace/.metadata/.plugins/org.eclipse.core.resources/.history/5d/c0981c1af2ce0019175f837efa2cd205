@@ -1,0 +1,7 @@
+package beans;
+
+public interface Address {
+public String getAddress();
+public String getPhone();
+public String getCityState();
+}

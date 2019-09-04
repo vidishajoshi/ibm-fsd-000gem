@@ -1,0 +1,10 @@
+package beans;
+
+public class FortuneService implements FortuneInterface{
+
+	public String getFortune() {
+		
+		return "today is not a lucky day";
+	}
+
+}

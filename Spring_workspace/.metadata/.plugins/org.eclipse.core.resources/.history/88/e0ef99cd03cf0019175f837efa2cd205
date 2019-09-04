@@ -1,0 +1,19 @@
+package beans;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
+public class SwimCoach {
+    @Value("admin@g.com")
+	private String email;
+    @Value("the spring team")
+    private String teamName;
+    
+    private FortuneService service;
+    public SwimCoach(FortuneService service) {
+    	super();
+    	this.service=service;
+    }
+	
+}

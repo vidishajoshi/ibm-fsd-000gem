@@ -7,4 +7,9 @@ public class BasketballCoach implements Coach {
 		return "do extra jumping today";
 	}
 
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

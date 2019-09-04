@@ -8,6 +8,8 @@
 	<enableImports><![CDATA[false]]></enableImports>
 	<configs>
 		<config>src/main/java/applicationContext.xml</config>
+		<config>src/main/java/applicationContext1.xml</config>
+		<config>src/main/java/componentContext.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>

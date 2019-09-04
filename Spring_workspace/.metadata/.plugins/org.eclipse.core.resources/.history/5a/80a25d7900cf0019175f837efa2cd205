@@ -1,0 +1,10 @@
+package beans;
+
+public class Badminton implements Coach{
+
+	public String getDailyWorlkout() {
+		// TODO Auto-generated method stub
+		return "welcome to badminton club";
+	}
+
+}

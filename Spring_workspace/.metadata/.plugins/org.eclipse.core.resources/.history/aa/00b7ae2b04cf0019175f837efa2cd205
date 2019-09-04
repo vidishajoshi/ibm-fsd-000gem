@@ -1,0 +1,53 @@
+package beans;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
+public class SwimCoach {
+    @Value("admin@g.com")
+	private String email;
+    @Value("the spring team")
+    private String teamName;
+    
+    private FortuneService service;
+    @Autowired
+    public SwimCoach(FortuneService service) {
+    	super();
+    	this.service=service;
+    }
+	public SwimCoach() {
+		super();
+	}
+	public SwimCoach(String email, String teamName) {
+		super();
+		this.email = email;
+		this.teamName = teamName;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getTeamName() {
+		return teamName;
+	}
+	public void setTeamName(String teamName) {
+		this.teamName = teamName;
+	}
+	public FortuneService getService() {
+		return service;
+	}
+	public void setService(FortuneService service) {
+		this.service = service;
+	}
+	@Override
+	public String toString() {
+		return "SwimCoach [email=" + email + ", teamName=" + teamName + ", service=" + service + "]";
+	}
+    
+    
+	
+}

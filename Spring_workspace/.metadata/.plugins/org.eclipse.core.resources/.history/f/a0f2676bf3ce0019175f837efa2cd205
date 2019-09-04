@@ -1,0 +1,11 @@
+package beans;
+
+public class CricketCoach implements Address {
+
+	public String getDailyWorlkout() {
+		
+		return "do exercise";
+	
+	}
+
+}
