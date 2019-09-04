@@ -8,7 +8,7 @@ import entity.Instructor;
 import entity.InstructorDetail;
 
 public class CreateDetails {
-public static void main(String args[]) {
+public void create(){
 	SessionFactory factory = new Configuration().configure("hibernate.cfg.xml").addAnnotatedClass(Instructor.class)
 			                  .addAnnotatedClass(InstructorDetail.class).buildSessionFactory();
 	

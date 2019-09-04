@@ -11,7 +11,7 @@ import entity.InstructorDetail;
 
 public class DeleteDetails {
 
-	public static void main(String[] args) {
+	public void delete() {
 		SessionFactory factory = new Configuration().configure("hibernate.cfg.xml").addAnnotatedClass(Instructor.class)
                 .addAnnotatedClass(InstructorDetail.class).buildSessionFactory();
 
