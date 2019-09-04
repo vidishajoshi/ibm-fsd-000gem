@@ -29,7 +29,7 @@ public class StudentDaoImpl implements StudentDao {
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-		factory.close();
+		
 	}
 
 	@Override
@@ -46,28 +46,43 @@ public class StudentDaoImpl implements StudentDao {
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-		factory.close();
+		
 		return list;
 		
 	}
 
 	@Override
 	public Student getEmployeeById(int id) {
-		// TODO Auto-generated method stub
-		return null;
+		Student st=null;
+		try {
+			Session session = factory.openSession();
+			st=session.get(Student.class,id);
+			System.out.println("student retrived from given id: "+id);
+			System.out.println(st.toString());
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		return st;
 	}
 
 	@Override
-	public void createEmployee(com.ibm.fsd.Dao.Student student) {
-		// TODO Auto-generated method stub
+	public void deleteEmployee(int id) {
+		Student st=null;
+		try {
+			Session session = factory.openSession();
+			session.beginTransaction();
+			st=session.get(Student.class,id);
+			System.out.println("deleting the student from given id: "+id);
+			session.delete(st);
+			session.getTransaction().commit();
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
 		
 	}
 
-	@Override
-	public com.ibm.fsd.Dao.Student getEmployeeById(int id) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 
-}
+

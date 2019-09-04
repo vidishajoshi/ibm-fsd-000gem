@@ -1,7 +1,10 @@
 package com.ibm.fsd.Model;
 
-import javax.persistence.Column;
+
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 import lombok.Data;
@@ -11,34 +14,25 @@ import lombok.Data;
 @Data
 
 public class Student {
-	@Column(name="id")
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
-	@Column(name="fname")
-	private String fName;
-	@Column(name="lname")
-	private String lName;
-	@Column(name="email")
+	private String fname;
+	private String lname;
 	private String email;
-	
 	public Student() {
 		super();
 	}
-
-	public Student(int id, String fName, String lName, String email) {
+	public Student(String fname, String lname, String email) {
 		super();
-		this.id = id;
-		this.fName = fName;
-		this.lName = lName;
+		this.fname = fname;
+		this.lname = lname;
 		this.email = email;
 	}
-
-	
-	
 	@Override
 	public String toString() {
-		return "Student [id=" + id + ", fName=" + fName + ", lName=" + lName + ", email=" + email + "]";
+		return "Student [id=" + id + ", fname=" + fname + ", lname=" + lname + ", email=" + email + "]";
 	}
 	
 	
-
 }
