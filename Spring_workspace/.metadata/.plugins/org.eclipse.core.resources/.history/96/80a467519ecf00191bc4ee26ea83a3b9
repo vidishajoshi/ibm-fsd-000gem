@@ -41,7 +41,7 @@ public class EmployeeDao {
 	  ps.setInt(1, id);
 	 ResultSet rs = ps.executeQuery();
 	 while(rs.next()) {
-	 System.out.println("first Name :" +rs.getString(1)+" last name : "+rs.getString(2)+ " email : "+rs.getString(3));
+	 System.out.println("first name :" +rs.getString(1)+" last name : "+rs.getString(2)+ " email : "+rs.getString(3));
 	 }
 	  
   }
