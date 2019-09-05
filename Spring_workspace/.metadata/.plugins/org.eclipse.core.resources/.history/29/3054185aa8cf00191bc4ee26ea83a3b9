@@ -1,0 +1,13 @@
+package bean;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class JavaConfigDemoApp {
+
+	public static void main(String[] args) {
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext("SportConfig.java");
+        EmployeeDao emp=context.getBean("employeeDao",EmployeeDao.class);
+        Employee emp=context.getBean("employee",Employee.class);
+	}
+
+}

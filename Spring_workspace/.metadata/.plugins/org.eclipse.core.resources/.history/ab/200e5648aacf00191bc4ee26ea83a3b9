@@ -1,0 +1,9 @@
+package bean;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Component;
+
+@ComponentScan(basePackages = "bean")
+public class SportConfig {
+
+}

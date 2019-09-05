@@ -1,0 +1,18 @@
+package bean.mybean;
+
+import java.sql.SQLException;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import bean.Employee;
+
+public class JavaConfigDemoApp {
+
+	public static void main(String[] args) throws SQLException {
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SportConfig.class);
+        EmployeeService emp=context.getBean("employeeService",EmployeeService.class);
+        Employee emp1=context.getBean("employee",Employee.class);
+        emp.createEmployee(emp1);
+	}
+
+}
