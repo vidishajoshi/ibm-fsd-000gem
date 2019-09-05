@@ -35,7 +35,7 @@ public class EmployeeDao {
   }
 
   public void getEmployeeById(int id) throws SQLException {
-	  Employee emp=null;
+	  
 	  Connection connection=dataSource.getConnection();
 	  PreparedStatement ps=connection.prepareStatement("select * from employee where id=?");
 	  ps.setInt(1, id);
@@ -44,6 +44,14 @@ public class EmployeeDao {
 	 System.out.println("first name :" +rs.getString(1)+" last name : "+rs.getString(2)+ " email : "+rs.getString(3));
 	 }
 	  
+  }
+  
+  public void deleteEmployee(int id) throws SQLException {
+	  Connection connection=dataSource.getConnection();
+	  PreparedStatement ps=connection.prepareStatement("delete from employee where id=?");
+	  ps.setInt(1,id);
+	  ps.executeUpdate();
+	  System.out.println("Employee Deleted!");
   }
 }
 

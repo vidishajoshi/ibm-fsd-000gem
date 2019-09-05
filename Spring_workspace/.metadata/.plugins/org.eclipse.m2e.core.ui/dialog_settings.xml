@@ -25,12 +25,16 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.ibm.fsd.spring_jdbc_templet_5_sep"/>
+			<item value="com.ibm.fsd.spring_datasource_05_Sep"/>
 			<item value="com.ibm.fsd.spring_demo_04_sep"/>
 		</list>
 		<list key="groupId">
 			<item value="com.ibm.fsd"/>
 		</list>
 		<list key="artifactId">
+			<item value="spring_jdbc_templet_5_sep"/>
+			<item value="spring_datasource_05_Sep"/>
 			<item value="spring_demo_04_sep"/>
 		</list>
 		<list key="projectNameTemplate">
