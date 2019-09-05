@@ -1,0 +1,36 @@
+package dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import javax.sql.DataSource;
+
+import bean.Employee;
+
+public class EmployeeDao {
+
+  private DataSource dataSource;
+  
+  public DataSource getDatasource() {
+	return dataSource;
+	  
+  }
+  
+  public void setDataSource(DataSource dataSource) {
+	  this.dataSource=dataSource;
+	  
+  }
+
+  public void createEmployee(Employee employee) throws SQLException {
+	  Connection connection = dataSource.getConnection();
+	  PreparedStatement ps=connection.prepareStatement("insert into employee(fname,lname,email) values(?,?,?)");
+	  ps.setString(1,employee.getFname());
+	  ps.setString(2, employee.getLname());
+	  ps.setString(3, employee.getEmail());
+	  ps.executeUpdate();  
+  }
+
+}
+
+

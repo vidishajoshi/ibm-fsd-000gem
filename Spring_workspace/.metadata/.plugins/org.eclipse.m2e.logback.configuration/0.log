@@ -689,3 +689,216 @@
 2019-09-04 17:23:34,870 [Worker-164: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_demo_04_sep\src\main\resources
 2019-09-04 17:23:34,871 [Worker-164: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-09-04 17:23:34,872 [Worker-164: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_demo_04_sep\src\test\resources
+2019-09-05 08:56:09,167 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-09-05 08:57:19,260 [Worker-2: Creating maven-archetype-quickstart] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Collecting project info '/pom.xml' E:\Spring_workspace\spring_datasource_05_Sep\pom.xml
+2019-09-05 08:57:23,232 [Worker-2: Creating maven-archetype-quickstart] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ibm.fsd:spring_datasource_05_Sep:0.0.1-SNAPSHOT @ E:\Spring_workspace\spring_datasource_05_Sep\pom.xml.
+2019-09-05 08:57:23,765 [Worker-2: Creating maven-archetype-quickstart] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /spring_datasource_05_Sep/src/main/java
+2019-09-05 08:57:23,775 [Worker-2: Creating maven-archetype-quickstart] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /spring_datasource_05_Sep/src/test/java
+2019-09-05 08:57:24,649 [Worker-2: Creating maven-archetype-quickstart] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 5 sec
+2019-09-05 08:57:27,525 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 08:57:27,525 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 08:57:27,527 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 08:57:27,527 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 08:58:46,612 [Worker-13: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ibm.fsd:spring_datasource_05_Sep:0.0.1-SNAPSHOT @ E:\Spring_workspace\spring_datasource_05_Sep\pom.xml.
+2019-09-05 08:58:46,882 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 08:58:46,882 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 08:58:46,883 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 08:58:46,884 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 08:58:48,190 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 08:58:48,190 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 08:58:48,191 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 08:58:48,191 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:00:13,960 [Worker-9: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-09-05 09:00:14,271 [Worker-9: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ibm.fsd:spring_datasource_05_Sep:0.0.1-SNAPSHOT @ E:\Spring_workspace\spring_datasource_05_Sep\pom.xml.
+2019-09-05 09:00:14,433 [Worker-9: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /spring_datasource_05_Sep/src/main/java
+2019-09-05 09:00:14,433 [Worker-9: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /spring_datasource_05_Sep/src/test/java
+2019-09-05 09:00:14,550 [Worker-9: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2019-09-05 09:00:15,674 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:00:15,675 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:00:15,677 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:00:15,677 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:01:11,447 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:01:11,447 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:01:11,449 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:01:11,449 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:01:26,962 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:01:26,962 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:01:26,963 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:01:26,963 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:02:15,091 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:02:15,091 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:02:15,092 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:02:15,092 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:03:19,099 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:03:19,099 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:03:19,100 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:03:19,101 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:04:12,826 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:04:12,826 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:04:12,827 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:04:12,827 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:04:53,051 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:04:53,052 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:04:53,053 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:04:53,053 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:05:02,819 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:05:02,820 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:05:02,822 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:05:02,822 [Worker-9: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:10:08,811 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:10:08,811 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:10:08,812 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:10:08,812 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:10:40,613 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:10:40,614 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:10:40,615 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:10:40,615 [Worker-1: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:16:47,232 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:16:47,232 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:16:47,235 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:16:47,235 [Worker-15: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:17:48,576 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:17:48,576 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:17:48,577 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:17:48,577 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:22:18,317 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:22:18,317 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:22:18,319 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:22:18,319 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:23:17,693 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:23:17,694 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:23:17,695 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:23:17,695 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:26:19,848 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:26:19,848 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:26:19,849 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:26:19,849 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:28:02,389 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:28:02,389 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:28:02,391 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:28:02,392 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:28:19,388 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:28:19,389 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:28:19,389 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:28:19,389 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:31:37,500 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:31:37,500 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:31:37,501 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:31:37,501 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:35:50,339 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:35:50,340 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:35:50,341 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:35:50,341 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:36:51,032 [Worker-29: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:36:51,032 [Worker-29: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:36:51,034 [Worker-29: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:36:51,034 [Worker-29: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:37:23,119 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:37:23,119 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:37:23,120 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:37:23,120 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:37:56,553 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:37:56,553 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:37:56,554 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:37:56,554 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:38:02,737 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:38:02,738 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:38:02,739 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:38:02,739 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:39:48,826 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:39:48,827 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:39:48,827 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:39:48,828 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:40:15,480 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:40:15,480 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:40:15,481 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:40:15,481 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:40:38,612 [Worker-29: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:40:38,612 [Worker-29: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:40:38,613 [Worker-29: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:40:38,613 [Worker-29: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:40:49,839 [Worker-29: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:40:49,840 [Worker-29: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:40:49,840 [Worker-29: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:40:49,840 [Worker-29: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:41:32,295 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:41:32,296 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:41:32,297 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:41:32,297 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:42:53,796 [Worker-29: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:42:53,796 [Worker-29: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:42:53,798 [Worker-29: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:42:53,798 [Worker-29: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:45:01,716 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:45:01,716 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:45:01,717 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:45:01,717 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:49:52,985 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:49:52,985 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:49:52,986 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:49:52,986 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:50:09,772 [Worker-38: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:50:09,773 [Worker-38: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:50:09,773 [Worker-38: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:50:09,773 [Worker-38: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:53:19,953 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:53:19,953 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:53:19,954 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:53:19,954 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:53:48,986 [Worker-38: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:53:48,987 [Worker-38: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:53:48,987 [Worker-38: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:53:48,987 [Worker-38: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:54:31,369 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:54:31,370 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:54:31,370 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:54:31,370 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:54:45,303 [Worker-39: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:54:45,303 [Worker-39: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:54:45,304 [Worker-39: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:54:45,304 [Worker-39: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:55:06,160 [Worker-39: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:55:06,160 [Worker-39: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:55:06,161 [Worker-39: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:55:06,161 [Worker-39: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:55:23,929 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:55:23,930 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:55:23,931 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:55:23,931 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:55:53,325 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:55:53,325 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:55:53,326 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:55:53,326 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:56:41,444 [Worker-40: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:56:41,444 [Worker-40: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:56:41,445 [Worker-40: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:56:41,445 [Worker-40: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:56:48,941 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:56:48,941 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:56:48,942 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:56:48,942 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:57:25,885 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:57:25,885 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:57:25,885 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:57:25,885 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:57:34,303 [Worker-38: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:57:34,304 [Worker-38: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:57:34,304 [Worker-38: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:57:34,304 [Worker-38: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:58:21,712 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:58:21,713 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:58:21,713 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:58:21,714 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 09:58:39,986 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:58:39,986 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\main\resources
+2019-09-05 09:58:39,986 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 09:58:39,986 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_datasource_05_Sep\src\test\resources
+2019-09-05 10:08:16,798 [Worker-37: Creating maven-archetype-quickstart] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Collecting project info '/pom.xml' E:\Spring_workspace\spring_jdbc_templet_5_sep\pom.xml
+2019-09-05 10:08:16,950 [Worker-37: Creating maven-archetype-quickstart] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ibm.fsd:spring_jdbc_templet_5_sep:0.0.1-SNAPSHOT @ E:\Spring_workspace\spring_jdbc_templet_5_sep\pom.xml.
+2019-09-05 10:08:17,090 [Worker-37: Creating maven-archetype-quickstart] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /spring_jdbc_templet_5_sep/src/main/java
+2019-09-05 10:08:17,100 [Worker-37: Creating maven-archetype-quickstart] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /spring_jdbc_templet_5_sep/src/test/java
+2019-09-05 10:08:17,215 [Worker-37: Creating maven-archetype-quickstart] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 0 sec
+2019-09-05 10:08:17,761 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 10:08:17,761 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_jdbc_templet_5_sep\src\main\resources
+2019-09-05 10:08:17,762 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-09-05 10:08:17,762 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Spring_workspace\spring_jdbc_templet_5_sep\src\test\resources

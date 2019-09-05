@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+<fullyQualifiedTypeName name="beans.Coach"/>
+<fullyQualifiedTypeName name="beans.BasketballCoach"/>
+<fullyQualifiedTypeName name="beans.Employee"/>
+<fullyQualifiedTypeName name="beans.CricketCoach"/>
+<fullyQualifiedTypeName name="beans.Student"/>
+<fullyQualifiedTypeName name="beans.Badminton"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="beans.SwimCoach"/>
+<fullyQualifiedTypeName name="javax.annotation.PostConstruct"/>
+<fullyQualifiedTypeName name="javax.annotation.PreDestroy"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+</qualifiedTypeNameHistroy>

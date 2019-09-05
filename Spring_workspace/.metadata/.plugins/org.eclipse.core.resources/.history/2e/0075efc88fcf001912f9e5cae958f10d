@@ -1,0 +1,18 @@
+package dao;
+
+import javax.sql.DataSource;
+
+public class EmployeeDao {
+
+  private DataSource dataSource;
+  
+  public DataSource getDatasource() {
+	return dataSource;
+	  
+  }
+  
+  public void setDataSource(DataSource dataSource) {
+	  this.dataSource=dataSource;
+	  
+  }
+}
