@@ -26,6 +26,7 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.ibm.fsd.spring_mvc_form_06_Sep"/>
 			<item value="com.ibm.fsd.spring_mvc_demo_05_sep"/>
 			<item value="com.ibm.fsd.spring_java_config_05_sep"/>
 			<item value="com.ibm.fsd.spring_jdbc_templet_5_sep"/>
@@ -36,6 +37,7 @@
 			<item value="com.ibm.fsd"/>
 		</list>
 		<list key="artifactId">
+			<item value="spring_mvc_form_06_Sep"/>
 			<item value="spring_mvc_demo_05_sep"/>
 			<item value="spring_java_config_05_sep"/>
 			<item value="spring_jdbc_templet_5_sep"/>

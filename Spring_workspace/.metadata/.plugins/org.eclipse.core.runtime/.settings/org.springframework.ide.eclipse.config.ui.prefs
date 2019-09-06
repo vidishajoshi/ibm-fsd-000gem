@@ -4,4 +4,5 @@
 //com.springsource.config.ui.prefs.activePageIndex\:/spring_demo_04_sep/src/main/java/componentContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/spring_jdbc_templet_5_sep/src/main/java/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/spring_mvc_demo_05_sep/src/main/webapp/WEB-INF/spring_mvc_demo_05_sep.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/spring_mvc_form_06_Sep/src/main/webapp/WEB-INF/spring_mvc_form_06_sep.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 eclipse.preferences.version=1

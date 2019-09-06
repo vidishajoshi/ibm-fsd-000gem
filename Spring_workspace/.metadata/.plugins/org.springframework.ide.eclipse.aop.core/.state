@@ -4,5 +4,6 @@
 <aop-project name="spring_demo_04_sep"/>
 <aop-project name="spring_mvc_demo_05_sep"/>
 <aop-project name="spring_jdbc_templet_5_sep"/>
+<aop-project name="spring_mvc_form_06_Sep"/>
 <aop-project name="spring_datasource_05_Sep"/>
 </aop-reference-model>

@@ -1,0 +1,21 @@
+package com.example.bean;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/student")
+public class StudentController {
+
+	@GetMapping("/")
+	public String viewPage() {
+		return "index";
+	}
+	
+	@PostMapping("/processForm")
+	public String processPage() {
+		return "student-process";
+	}
+}
