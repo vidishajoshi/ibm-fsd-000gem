@@ -1,0 +1,29 @@
+<%@page import="com.example.bean.Student"%>
+<%@page import="java.util.List"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+   
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Student details</h1>
+<%
+
+	List<Student> l=(List)request.getAttribute("student");
+for(Student s:l)
+{
+	out.println("First Name : "+s.getFname());
+	out.println("Last Name : "+s.getLname());
+	out.println("Email : "+s.getEmail());
+	out.println("Country : "+s.getCountry());
+	out.println("Fav Language : "+s.getLang());
+	out.println("Operating system : "+s.getOs());
+}
+
+%>
+</body>
+</html>

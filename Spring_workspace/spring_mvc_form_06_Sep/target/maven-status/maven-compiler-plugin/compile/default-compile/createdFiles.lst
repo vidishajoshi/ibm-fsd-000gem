@@ -1,0 +1,8 @@
+com\example\bean\connection\MyDataSource.class
+com\example\bean\StudentConfig.class
+com\example\bean\connection\MyJdbcTemplate.class
+com\example\bean\StudentController.class
+com\example\bean\StudentRowMapper.class
+com\example\bean\HomeController.class
+com\example\bean\StudentDao.class
+com\example\bean\Student.class

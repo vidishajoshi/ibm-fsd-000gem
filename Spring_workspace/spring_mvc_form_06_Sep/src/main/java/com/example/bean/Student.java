@@ -5,6 +5,8 @@ import java.util.LinkedHashMap;
 import org.springframework.stereotype.Component;
 @Component("student1")
 public class Student {
+	
+	private int id;
 private String fname;
 private String lname;
 private String email;
@@ -35,6 +37,14 @@ public String getFname() {
 
 public void setFname(String fname) {
 	this.fname = fname;
+}
+
+public int getId() {
+	return id;
+}
+
+public void setId(int id) {
+	this.id = id;
 }
 
 public String getLname() {
@@ -91,6 +101,13 @@ public String getFavoriteLanguage() {
 
 public void setFavoriteLanguage(String favoriteLanguage) {
 	this.favoriteLanguage = favoriteLanguage;
+}
+
+@Override
+public String toString() {
+	return "Student [fname=" + fname + ", lname=" + lname + ", email=" + email + ", country=" + country
+			+ ", countryOption=" + countryOption + ", lang=" + lang + ", os=" + os + ", favoriteLanguage="
+			+ favoriteLanguage + "]";
 }
 
 

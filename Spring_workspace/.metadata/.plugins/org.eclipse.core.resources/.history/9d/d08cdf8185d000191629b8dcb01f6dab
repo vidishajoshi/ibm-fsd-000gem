@@ -1,0 +1,23 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    <%@taglib uri="http://java.sun.com/jstl/core" prefix="c" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Student details</h1>
+<c:forEach var="l" items="${student}">
+FirstName : ${l.fname}<br>
+Last Name: ${l.lname}<br>
+email :${l.email}<br>
+country: ${l.country}<br>
+language: ${l.lang}<br>
+operating system: ${l.os}<br> 
+
+</c:forEach>
+
+</body>
+</html>
