@@ -1,0 +1,77 @@
+package com.example.bean;
+
+import java.util.LinkedHashMap;
+
+public class Student {
+private String firstName;
+private String lastName;
+private String email;
+private String country;
+private LinkedHashMap<String, String> countryOpiton;
+private String favouriteLang;
+
+public Student() {
+	super();
+	countryOptions = new LinkedHashMap<>();
+	
+	countryOptions.put("BR", "Brazil");
+	countryOptions.put("FR", "France");
+	countryOptions.put("DE", "Germany");
+	countryOptions.put("IN", "India");
+	countryOptions.put("US", "United States of America");		
+
+}
+
+public Student(String firstName, String lastName, String email,String country,String favouriteLang) {
+	super();
+	this.firstName = firstName;
+	this.lastName = lastName;
+	this.email = email;
+	this.country=country;
+	this.favouriteLang=favouriteLang;
+}
+
+public String getFirstName() {
+	return firstName;
+}
+
+public void setFirstName(String firstName) {
+	this.firstName = firstName;
+}
+
+public String getLastName() {
+	return lastName;
+}
+
+public void setLastName(String lastName) {
+	this.lastName = lastName;
+}
+
+public String getEmail() {
+	return email;
+}
+
+public void setEmail(String email) {
+	this.email = email;
+}
+
+public String getCountry() {
+	return country;
+}
+
+public void setCountry(String country) {
+	this.country = country;
+}
+
+public String getFavouriteLang() {
+	return favouriteLang;
+}
+
+public void setFavouriteLang(String favouriteLang) {
+	this.favouriteLang = favouriteLang;
+}
+
+
+
+
+}

@@ -1,35 +1,48 @@
 package com.example.bean;
 
+import java.util.LinkedHashMap;
+
+import org.springframework.stereotype.Component;
+@Component("student1")
 public class Student {
-private String firstName;
-private String lastName;
+private String fname;
+private String lname;
 private String email;
+private String country;
+private LinkedHashMap<String, String> countryOption;
+private String lang;
+private String os;
+
+
+private String favoriteLanguage;
 
 public Student() {
-	super();
+	
+	// populate country options: used ISO country code
+	countryOption = new LinkedHashMap<String ,String>();
+	
+	countryOption.put("BR", "Brazil");
+	countryOption.put("FR", "France");
+	countryOption.put("DE", "Germany");
+	countryOption.put("IN", "India");
+	countryOption.put("US", "United States of America");		
+
 }
 
-public Student(String firstName, String lastName, String email) {
-	super();
-	this.firstName = firstName;
-	this.lastName = lastName;
-	this.email = email;
+public String getFname() {
+	return fname;
 }
 
-public String getFirstName() {
-	return firstName;
+public void setFname(String fname) {
+	this.fname = fname;
 }
 
-public void setFirstName(String firstName) {
-	this.firstName = firstName;
+public String getLname() {
+	return lname;
 }
 
-public String getLastName() {
-	return lastName;
-}
-
-public void setLastName(String lastName) {
-	this.lastName = lastName;
+public void setLname(String lname) {
+	this.lname = lname;
 }
 
 public String getEmail() {
@@ -40,6 +53,45 @@ public void setEmail(String email) {
 	this.email = email;
 }
 
+public String getCountry() {
+	return country;
+}
+
+public void setCountry(String country) {
+	this.country = country;
+}
+
+public LinkedHashMap<String, String> getCountryOption() {
+	return countryOption;
+}
+
+public void setCountryOption(LinkedHashMap<String, String> countryOption) {
+	this.countryOption = countryOption;
+}
+
+public String getLang() {
+	return lang;
+}
+
+public void setLang(String lang) {
+	this.lang = lang;
+}
+
+public String getOs() {
+	return os;
+}
+
+public void setOs(String os) {
+	this.os = os;
+}
+
+public String getFavoriteLanguage() {
+	return favoriteLanguage;
+}
+
+public void setFavoriteLanguage(String favoriteLanguage) {
+	this.favoriteLanguage = favoriteLanguage;
+}
 
 
 

@@ -7,10 +7,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-Student Details
-first name:${tempStudent.firstName}
-last name :${tempStudent.lastName}
-email:${tempStudent.email }
+<h1>Student Details</h1><br>
+first name:${tempStudent.fname}<br><br>
+last name :${tempStudent.lname}<br><br>
+email:${tempStudent.email }<br><br>
+country :${tempStudent.country }<br><br>
+favourite lang:${tempStudent.lang }<br><br>
+operating system : ${tempStudent.os }
 
 </body>
 </html>
