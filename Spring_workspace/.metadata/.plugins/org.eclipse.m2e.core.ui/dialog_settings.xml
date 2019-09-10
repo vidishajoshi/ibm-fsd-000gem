@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="E:\ibm-fsd-000gem\Spring_workspace\spring_mvc_form_06_Sep"/>
 			<item value="E:\ibm-fsd-000gem\Spring_workspace\spring_mvc_customer_09_sep"/>
 			<item value="E:\Spring_workspace\spring_java_config_05_sep"/>
 		</list>
@@ -27,6 +28,8 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.ibm.fsd.spring_rest_crm_10sept"/>
+			<item value="com.ibm.fsd.spring_rest_api_10_sept"/>
 			<item value="com.ibm.fsd.spring_mvc_rest_demo_09_Sep"/>
 			<item value="com.ibm.fsd.spring_mvc_customer_09_sep"/>
 			<item value="com.ibm.fsd.spring_mvc_form_06_Sep"/>
@@ -40,6 +43,8 @@
 			<item value="com.ibm.fsd"/>
 		</list>
 		<list key="artifactId">
+			<item value="spring_rest_crm_10sept"/>
+			<item value="spring_rest_api_10_sept"/>
 			<item value="spring_mvc_rest_demo_09_Sep"/>
 			<item value="spring_mvc_customer_09_sep"/>
 			<item value="spring_mvc_form_06_Sep"/>
@@ -83,5 +88,18 @@
 	<section name="org.eclipse.m2e.core.pom.overview">
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\B4ibmjava05\Downloads\first_spring_boot_10sept\first_spring_boot_10sept"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
 	</section>
 </section>
