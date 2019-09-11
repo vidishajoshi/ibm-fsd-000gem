@@ -91,6 +91,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="E:\ibm-fsd-000gem\Spring\spring_h2_jpa_11Sept"/>
 			<item value="C:\Users\B4ibmjava05\Downloads\first_spring_boot_10sept\first_spring_boot_10sept"/>
 		</list>
 		<list key="projectNameTemplate">

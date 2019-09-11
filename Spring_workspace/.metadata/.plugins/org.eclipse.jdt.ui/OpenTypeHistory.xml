@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy/>
+<typeInfoHistroy>
+<typeInfo handle="=spring_h2_jpa_11Sept/C:\/Users\/B4ibmjava05\/.m2\/repository\/org\/springframework\/data\/spring-data-jpa\/2.1.10.RELEASE\/spring-data-jpa-2.1.10.RELEASE.jar&lt;org.springframework.data.jpa.repository(JpaRepository.class[JpaRepository" modifiers="1537" timestamp="1568108433341"/>
+<typeInfo handle="=spring_h2_jpa_11Sept/C:\/Users\/B4ibmjava05\/.m2\/repository\/org\/springframework\/data\/spring-data-jpa\/2.1.10.RELEASE\/spring-data-jpa-2.1.10.RELEASE.jar&lt;org.springframework.data.jpa.repository.support(CrudMethodMetadata.class[CrudMethodMetadata" modifiers="1537" timestamp="1568108433341"/>
+<typeInfo handle="=spring_h2_jpa_11Sept/C:\/Users\/B4ibmjava05\/.m2\/repository\/org\/springframework\/data\/spring-data-commons\/2.1.10.RELEASE\/spring-data-commons-2.1.10.RELEASE.jar&lt;org.springframework.data.repository(CrudRepository.class[CrudRepository" modifiers="1537" timestamp="1568108440435"/>
+</typeInfoHistroy>
