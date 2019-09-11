@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+	<title>Reservation Details</title>
+</head>
+
+<div class="container">
+
+	<h3>Reservation Details</h3>
+	<hr>
+	<fieldset>
+	<legend><h2>Passenger Table</h2></legend>
+	<!-- Add a button -->
+	<a th:href="@{/reservation/showFormForAddPassenger}"
+		class="btn btn-success btn-sm mb-3">
+		Add Passenger
+	</a>
+	
+	
+	<table class="table table-bordered table-striped">
+		<thead class="thead-dark">
+			<tr>
+				<th>Passenger Id</th>
+				<th>Passenger FName</th>
+				<th>Passenger LName</th>
+				<th>Email</th>
+				
+			</tr>
+		</thead>
+		
+		<tbody>
+			<tr th:each="temp1 : ${passenger}">
+			
+				<td th:text="${temp1.id}" />	
+				<td th:text="${temp1.fname}" />
+				<td th:text="${temp1.lname}"/>	
+				<td th:text="${temp1.email}" />	
+				
+			</tr>
+		</tbody>		
+	</table>
+	</fieldset>
+	<br>
+	<br>
+	<fieldset>
+	<legend><h2>Flight Table</h2></legend>
+	<!-- Add a button -->
+	<a th:href="@{/reservation/showFormForAddFlight}"
+		class="btn btn-primary btn-sm mb-3">
+		Add Flight
+	</a>
+	
+	
+	<table class="table table-bordered table-striped">
+		<thead class="thead-dark">
+			<tr>
+				<th>Flight Id</th>
+				<th>Flight Name</th>
+				<th>Source</th>
+				<th>Destination</th>
+			</tr>
+		</thead>
+		
+		<tbody>
+			<tr th:each="temp2 : ${flight}">
+			
+				<td th:text="${temp2.id}" />	
+				<td th:text="${temp2.flightName}" />
+				<td th:text="${temp2.source}"/>	
+				<td th:text="${temp2.dest}" />	
+				
+			</tr>
+		</tbody>		
+	</table>
+		</fieldset>
+	
+</div>
+	
+</body>
+</html>
