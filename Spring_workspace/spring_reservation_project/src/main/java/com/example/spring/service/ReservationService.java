@@ -13,10 +13,12 @@ public interface ReservationService {
 	public Flight findFlightById(Long id);
 	public void saveFlight(Flight flight);
 	public void deleteFlight(Long id);
+	public void editFlight(Long id);
 	
 //passenger functions
 	public List<Passenger> findAllPassenger();
 	public Passenger findPassengerById(Long id);
 	public void saveFlight(Passenger passenger);
 	public void deletePassenger(Long id);
+	public void editPassenger(Long id);
 }

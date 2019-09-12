@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+	<title>Reservation Details</title>
+	<style>
+	.m{
+	display:block;
+	height:800px;
+	background-color:azure;
+	}
+	.he{
+	display:block;
+	float:left;
+	background-color:blue;
+	}
+	.pic{
+
+	}
+	</style>
+</head>
+<body>
+<div class="container">
+<div class="m">
+<div class="he">
+<h2>Welcome to the online Reservation system</h2>
+</div>
+<div class="pic">
+<img src="air.jp"><a th:href="@{/reservation/view}"
+		class="btn btn-success btn-sm mb-3">
+		Let's Start
+	</a></img>
+</div>
+</div>
+</body>
+</html>

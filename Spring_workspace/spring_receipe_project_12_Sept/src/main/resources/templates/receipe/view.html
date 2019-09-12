@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+	<title>Recipe Details</title>
+</head>
+<body>
+<div class="container">
+
+	<h3>Recipe Details</h3>
+	<hr>
+	<fieldset>
+	<legend><h2>Recipe Table</h2></legend>
+	<!-- Add a button -->
+
+	
+	
+	<table class="table table-bordered table-striped">
+		<thead class="thead-dark">
+			<tr>
+				<th>Recipe Id</th>
+				<th>Name</th>
+				<th>Cook Time</th>
+				<th>Difficulty</th>
+				<th>Direction</th>
+				<th>Prep Time</th>
+				<th>Serve</th>
+				<th>Source</th>
+				
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="temp1 : ${recipe}">
+			
+				<td th:text="${temp1.id}" />	
+				<td th:text="${temp1.name}" />
+				<td th:text="${temp1.cookTime}"/>	
+				<td th:text="${temp1.difficulty}" />	
+				<td th:text="${temp1.direction}" />		
+			    <td th:text="${temp1.prepTime}" />	
+			    <td th:text="${temp1.serve}" />	
+			    <td th:text="${temp1.source}" />	
+			</tr>
+		</tbody>		
+	</table>
+	</fieldset>
+	<br>
+	<br>
+	<fieldset>
+	<legend><h2>Ingredient Table</h2></legend>
+	
+	<table class="table table-bordered table-striped">
+		<thead class="thead-dark">
+			<tr>
+				<th>Ingre. Id</th>
+				<th>Amount</th>
+				<th>Desc</th>
+				
+			</tr>
+		</thead>
+		
+		<tbody>
+			<tr th:each="temp2 : ${ingre}">
+			
+				<td th:text="${temp2.id}" />	
+				<td th:text="${temp2.Amount}" />
+				<td th:text="${temp2.desc}"/>	
+				</tr>
+		</tbody>		
+	</table>
+		</fieldset>
+	<br>
+	<br>
+	<fieldset>
+	<legend><h2>Note Table</h2></legend>
+	<table class="table table-bordered table-striped">
+		<thead class="thead-dark">
+			<tr>
+				<th>Note Id</th>
+				<th>Name</th>
+				<th>Description</th>
+			</tr>
+		</thead>
+		
+		<tbody>
+			<tr th:each="temp3 : ${note}">
+			
+				<td th:text="${temp3.id}" />	
+				<td th:text="${temp3.Note}" />
+				<td th:text="${temp3.desc}"/>	
+				
+			</tr>
+		</tbody>		
+	</table>
+	</fieldset>
+	
+	<hr>
+		<a th:href="@{/recipe/display}">Back to Recipe List</a>
+</div>
+</body>
+</html>

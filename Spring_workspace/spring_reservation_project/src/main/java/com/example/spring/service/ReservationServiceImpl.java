@@ -90,4 +90,15 @@ public class ReservationServiceImpl implements ReservationService {
 
 	}
 
+	@Override
+	public void editPassenger(Long id) {
+		
+		
+	}
+
+	@Override
+	public void editFlight(Long id) {
+		
+		
+	}
 }

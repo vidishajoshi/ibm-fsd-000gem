@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+	<title>Edit passenger</title>
+</head>
+
+<body>
+
+<div class="container">
+	
+		<h3>Edit Passenger</h3>
+		<hr>
+		
+		<p class="h4 mb-4">Edit Passenger</p>
+	
+		<form action="#" th:action="@{/reservation/passenger/edit}"
+						 th:object="${passenger}" method="POST">
+		
+			<input type="text" th:field="*{id}"
+					class="form-control mb-4 col-4" value="@{passenger.id}" disabled>
+			
+			<input type="text" th:field="*{fname}"
+					class="form-control mb-4 col-4" value="@{passenger.fname}">
+
+			<input type="text" th:field="*{lname}"
+					class="form-control mb-4 col-4" value="@{passenger.lname}">
+
+			<input type="text" th:field="*{email}"
+					class="form-control mb-4 col-4" value="@{passenger.email}">
+				
+			<button type="submit" class="btn btn-info col-2">Edit</button>
+						
+		</form>
+	
+		<hr>
+		<a th:href="@{/reservation/view}">Back to Reservation List</a>
+		
+	</div>
+</body>
+
+</html>

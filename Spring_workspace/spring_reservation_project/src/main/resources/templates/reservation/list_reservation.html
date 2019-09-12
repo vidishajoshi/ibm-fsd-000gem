@@ -11,7 +11,7 @@
 
 	<title>Reservation Details</title>
 </head>
-
+<body>
 <div class="container">
 
 	<h3>Reservation Details</h3>
@@ -32,6 +32,8 @@
 				<th>Passenger FName</th>
 				<th>Passenger LName</th>
 				<th>Email</th>
+				<th>Edit</th>
+				<th>Delete</th>
 				
 			</tr>
 		</thead>
@@ -43,6 +45,8 @@
 				<td th:text="${temp1.fname}" />
 				<td th:text="${temp1.lname}"/>	
 				<td th:text="${temp1.email}" />	
+				<td><a href="@{/reservation/showPassengerFormForUpdate/${temp1.id}}"><button class="btn btn-warning btn-sm mb-3">Edit</button></a></td>
+				<td><a href="@{/reservation/deletePassenger/${temp1.id}"><button class="btn btn-danger btn-sm mb-3" >Delete</button></a></td>
 				
 			</tr>
 		</tbody>		
@@ -66,6 +70,8 @@
 				<th>Flight Name</th>
 				<th>Source</th>
 				<th>Destination</th>
+				<th>Edit</th>
+				<th>Delete</th>
 			</tr>
 		</thead>
 		
@@ -76,7 +82,8 @@
 				<td th:text="${temp2.flightName}" />
 				<td th:text="${temp2.source}"/>	
 				<td th:text="${temp2.dest}" />	
-				
+				<td><a href="@{/reservation/showFlightFormForUpdate/${temp2.id}}"><button class="btn btn-warning btn-sm mb-3">Edit</button></a></td>
+				<td><a href="@{/reservation/deleteFlight/${temp2.id}}"><button class="btn btn-danger btn-sm mb-3" >Delete</button></a></td>
 			</tr>
 		</tbody>		
 	</table>
