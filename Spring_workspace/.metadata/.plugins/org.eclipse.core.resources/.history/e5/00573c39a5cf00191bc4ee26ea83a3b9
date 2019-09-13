@@ -1,8 +1,0 @@
-package com.ibm.fsd.spring_jdbc_templet_5_sep;
-
-public interface JavaConfigDemoApp {
-
-	public static void main(String[] agrs) {
-		
-	}
-}

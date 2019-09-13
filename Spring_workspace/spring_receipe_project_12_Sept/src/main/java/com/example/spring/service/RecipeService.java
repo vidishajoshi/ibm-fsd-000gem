@@ -12,6 +12,7 @@ public interface RecipeService {
 	public List<Recipe> getAllRecipe();
 	public Recipe getRecipeById(Integer id);
 	public void deleteRecipe(Integer id);
+	public void updateRecipe(Integer id);
 	
 	//note function
 	public List<Note> getAllNote();

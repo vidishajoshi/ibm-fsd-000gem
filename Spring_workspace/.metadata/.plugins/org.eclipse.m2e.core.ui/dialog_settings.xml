@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="E:\ibm-fsd-000gem\Spring_workspace\spring_receipe_project_12_Sept"/>
 			<item value="E:\ibm-fsd-000gem\Spring_workspace\spring_mvc_form_06_Sep"/>
 			<item value="E:\ibm-fsd-000gem\Spring_workspace\spring_mvc_customer_09_sep"/>
 			<item value="E:\Spring_workspace\spring_java_config_05_sep"/>
@@ -28,31 +29,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.ibm.fsd.spring_rest_crm_10sept"/>
-			<item value="com.ibm.fsd.spring_rest_api_10_sept"/>
-			<item value="com.ibm.fsd.spring_mvc_rest_demo_09_Sep"/>
-			<item value="com.ibm.fsd.spring_mvc_customer_09_sep"/>
-			<item value="com.ibm.fsd.spring_mvc_form_06_Sep"/>
-			<item value="com.ibm.fsd.spring_mvc_demo_05_sep"/>
-			<item value="com.ibm.fsd.spring_java_config_05_sep"/>
-			<item value="com.ibm.fsd.spring_jdbc_templet_5_sep"/>
-			<item value="com.ibm.fsd.spring_datasource_05_Sep"/>
-			<item value="com.ibm.fsd.spring_demo_04_sep"/>
+			<item value="com.ibm.fsd.spring_security_12Sept"/>
 		</list>
 		<list key="groupId">
 			<item value="com.ibm.fsd"/>
 		</list>
 		<list key="artifactId">
-			<item value="spring_rest_crm_10sept"/>
-			<item value="spring_rest_api_10_sept"/>
-			<item value="spring_mvc_rest_demo_09_Sep"/>
-			<item value="spring_mvc_customer_09_sep"/>
-			<item value="spring_mvc_form_06_Sep"/>
-			<item value="spring_mvc_demo_05_sep"/>
-			<item value="spring_java_config_05_sep"/>
-			<item value="spring_jdbc_templet_5_sep"/>
-			<item value="spring_datasource_05_Sep"/>
-			<item value="spring_demo_04_sep"/>
+			<item value="spring_security_12Sept"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -86,6 +69,14 @@
 		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>

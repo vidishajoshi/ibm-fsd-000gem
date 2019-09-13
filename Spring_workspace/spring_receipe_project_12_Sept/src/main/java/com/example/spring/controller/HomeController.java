@@ -45,4 +45,11 @@ public class HomeController {
 		rs.deleteRecipe(id);
 		return "redirect:/recipe/display";
 	}
+	
+	@RequestMapping("/showForUpdate")
+	public String updateForm(@RequestParam("id") Integer id,Model theModel) {
+		Recipe r=rs.getRecipeById(id);
+	     theModel.addAttribute("recipe", r);
+		return "receipe/edit";
+	}
 }
