@@ -85,6 +85,30 @@ public class UserController {
 		return listRes;
 	}
 	
+	@GetMapping("/getUserBylname/{lname}")
+	public List<ResponseEntity<CreateUserResponseModel>> findUserByLName(@PathVariable("lname") String lname){
+		java.util.List<UserDetails> list= userService.findUserBylname(lname);
+		ModelMapper mapper = new ModelMapper();
+		List<ResponseEntity<CreateUserResponseModel>> listRes = new ArrayList<ResponseEntity<CreateUserResponseModel>>();
+		for(UserDetails u : list) {
+			CreateUserResponseModel cr = mapper.map(u, CreateUserResponseModel.class);
+			listRes.add(ResponseEntity.status(HttpStatus.CREATED).body(cr));
+		}
+		return listRes;
+	}
+	
+	@GetMapping("/getUserByemail/{email}")
+	public List<ResponseEntity<CreateUserResponseModel>> findUserByEmail(@PathVariable("email") String email){
+		java.util.List<UserDetails> list= userService.findUserByemail(email);
+		ModelMapper mapper = new ModelMapper();
+		List<ResponseEntity<CreateUserResponseModel>> listRes = new ArrayList<ResponseEntity<CreateUserResponseModel>>();
+		for(UserDetails u : list) {
+			CreateUserResponseModel cr = mapper.map(u, CreateUserResponseModel.class);
+			listRes.add(ResponseEntity.status(HttpStatus.CREATED).body(cr));
+		}
+		return listRes;
+	}
+	
 
 
 }

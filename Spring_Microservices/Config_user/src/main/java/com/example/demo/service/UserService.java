@@ -17,4 +17,10 @@ public interface UserService {
 
 	public java.util.List<UserDetails> findUserByfname(String name);
 	
+	public java.util.List<UserDetails> findUserBylname(String name);
+	
+	public java.util.List<UserDetails> findUserByemail(String email);
+	
+	
+	
 }

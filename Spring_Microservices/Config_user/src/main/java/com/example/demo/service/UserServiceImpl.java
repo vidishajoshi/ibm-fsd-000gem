@@ -89,5 +89,17 @@ public class UserServiceImpl implements UserService {
 		java.util.List<UserDetails> ud=userRepo.findByFname(name);
 		return ud;
 	}
+
+	@Override
+	public java.util.List<UserDetails> findUserBylname(String name) {
+		java.util.List<UserDetails> ud=userRepo.findByLname(name);
+		return ud;
+	}
+
+	@Override
+	public java.util.List<UserDetails> findUserByemail(String email) {
+		java.util.List<UserDetails> ud=userRepo.findByEmail(email);
+		return null;
+	}
 	
 }
