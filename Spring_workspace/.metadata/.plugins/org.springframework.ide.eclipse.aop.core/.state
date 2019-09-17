@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
 <aop-project name="spring_league_security_13_sept_01"/>
+<aop-project name="spring_security_employee_with_sql"/>
 <aop-project name="spring_employee_security_13_Sept"/>
 <aop-project name="spring_reservation_project"/>
 <aop-project name="spring_receipe_project_12_Sept"/>

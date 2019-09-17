@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+	<title>Employee Details</title>
+</head>
+<body>
+<div class="container">
+
+	<h3>Employee Details</h3>
+	<hr>
+	<fieldset>
+	<legend><h2>Employee Table</h2></legend>
+	<!-- Add a button -->
+
+	
+	
+	<table class="table table-bordered table-striped">
+		<thead class="thead-dark">
+			<tr>
+				<th>Employee Id</th>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Email</th>
+				<th>Job type</th>
+				<th>Hourly paid</th>
+				<th>Time period</th>
+				<th>Salary</th>
+				<th>Commission</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="temp1 : ${emp}">
+			
+				<td th:text="${emp.id}" />	
+				<td th:text="${emp.fname}" />
+				<td th:text="${emp.lname}"/>	
+				<td th:text="${emp.email}" />	
+				<td th:text="${emp.job}" />		
+			    <td th:text="${emp.paid}" />	
+			    <td th:text="${emp.period}" />	
+			    <td th:text="${emp.sal}" />
+			    <td th:text="${emp.comm}"/>	
+			</tr>
+		</tbody>		
+	</table>
+	</fieldset>
+	<br>
+	<br>
+	<hr>
+		<a th:href="@{/}">Back to Employee List</a>
+</div>
+</body>
+</html>
