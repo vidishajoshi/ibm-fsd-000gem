@@ -9,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import com.example.spring.model.DoctorResponseModel;
+import com.example.spring.service.CommonService;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -18,12 +19,12 @@ import com.example.spring.dto.DoctorClient;
 @Controller
 public class DoctorController {
 
-	@Autowired DoctorClient doctorClient;
+	@Autowired CommonService commonService;
 	
 	@GetMapping("/getdoctor/{special}")
 	public List<DoctorResponseModel> getDoctor(@PathVariable("special") String special){
 		List<ResponseEntity<DoctorResponseModel>> list= new ArrayList<ResponseEntity<DoctorResponseModel>>();
-		list=doctorClient.getDoctor(special);
+		list=commonService.getDoctor(special);
 		List<DoctorResponseModel> listR=new ArrayList<DoctorResponseModel>();
 		ModelMapper mapper=new ModelMapper();
 		for(ResponseEntity<DoctorResponseModel> u: list) {

@@ -61,4 +61,4 @@ public class WordServiceImpl implements WordService {
 		return new Word("something");
 	}
 
-}
+}             

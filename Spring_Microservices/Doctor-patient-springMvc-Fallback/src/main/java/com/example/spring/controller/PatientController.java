@@ -13,16 +13,17 @@ import org.springframework.web.bind.annotation.PathVariable;
 import com.example.spring.dto.PatientClient;
 
 import com.example.spring.model.PatientResponseModel;
+import com.example.spring.service.CommonService;
 
 @Controller
 public class PatientController {
 	
-	@Autowired PatientClient patientClient;
+	@Autowired CommonService commonService;
 	
 	@GetMapping("/getpatient/{disease}")
 	public List<PatientResponseModel> getDoctor(@PathVariable("disease") String special){
 		List<ResponseEntity<PatientResponseModel>> list= new ArrayList<ResponseEntity<PatientResponseModel>>();
-		list=patientClient.getPatient(special);
+		list=commonService.getPatient(special);
 		List<PatientResponseModel> listR=new ArrayList<PatientResponseModel>();
 		ModelMapper mapper=new ModelMapper();
 		for(ResponseEntity<PatientResponseModel> u: list) {
