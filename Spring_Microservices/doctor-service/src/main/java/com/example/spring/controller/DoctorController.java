@@ -20,7 +20,7 @@ import com.example.spring.service.DoctorService;
 public class DoctorController {
 	@Autowired DoctorService doctorService;
 	
-	@GetMapping("/get/{special}")
+	@GetMapping("/getD/{special}")
 	public java.util.List<ResponseEntity<DoctorResponseModel>> getDoctor(@PathVariable("special") String special){
 		java.util.List<Doctor> list=doctorService.getAllDoctor(special);
 		ModelMapper mapper=new ModelMapper();

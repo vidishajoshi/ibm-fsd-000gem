@@ -10,7 +10,7 @@ import com.example.spring.model.PatientResponseModel;
 
 public interface CommonService {
 
-	 public List<ResponseEntity<DoctorResponseModel>> getDoctor(String special);
+	 public List<?> getDoctor(String special);
 
-	 public List<ResponseEntity<PatientResponseModel>> getPatient( String special);
+	 public List<?> getPatient( String special);
 }

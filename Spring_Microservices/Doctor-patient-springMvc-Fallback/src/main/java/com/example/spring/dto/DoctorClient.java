@@ -13,6 +13,6 @@ import com.example.spring.model.DoctorResponseModel;
 @FeignClient("doctor-service")
 public interface DoctorClient {
 
-	@GetMapping("/doctor/get/{special}")
-	public List<ResponseEntity<DoctorResponseModel>> getDoctor(@PathVariable("special") String special);
+	@GetMapping("/doctor/getD/{special}")
+	public List<?> getDoctor(@PathVariable("special") String special);
 }

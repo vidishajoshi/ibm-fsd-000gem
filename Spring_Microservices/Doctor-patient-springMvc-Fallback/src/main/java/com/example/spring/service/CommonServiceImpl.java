@@ -1,5 +1,6 @@
 package com.example.spring.service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,26 +20,29 @@ public class CommonServiceImpl implements CommonService {
 	@Autowired DoctorClient doctorClient;
 	@Autowired PatientClient patientClient;
 	
+
 	@Override
 	@HystrixCommand(fallbackMethod="getFallbackDoctor")
-	public List<ResponseEntity<DoctorResponseModel>> getDoctor(String special) {
-		List<ResponseEntity<DoctorResponseModel>> list=doctorClient.getDoctor(special);
+	public List<?> getDoctor(String special) {
+		List<?> list=doctorClient.getDoctor(special);
 		return list;
 	}
 	
-	public String getFallbackDoctor() {
-		return "oops! Doctor";
+	public String getFallbackDoctor(String special) {
+		return "oops! Doctor"+special;
 	}
 
 	@Override
 	@HystrixCommand(fallbackMethod="getFallbackPatient")
-	public List<ResponseEntity<PatientResponseModel>> getPatient(String special) {
-		List<ResponseEntity<PatientResponseModel>> list=patientClient.getPatient(special);
+	public List<?> getPatient(String special) {
+		List<?> list=patientClient.getPatient(special);
 		return list;
 	}
 
 
-	public String getFallbackPatient() {
-		return "oops! Patient";
+	public List<?> getFallbackPatient(String special) {
+		List<String> list = new ArrayList<String>();
+		list.add(" dsd");
+		return list;
 	}
 }

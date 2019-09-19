@@ -25,7 +25,7 @@ public class PatientController {
 	@Autowired
 	private PatientService patientService;
 	
-	@GetMapping("/get/{disease}")
+	@GetMapping("/getP/{disease}")
 	public List<ResponseEntity<PatientResponseModel>> getPatient(@PathVariable("disease") String disease){
 		java.util.List<Patient> pDto=patientService.getAllPatient(disease);
 		ModelMapper mapper = new ModelMapper();
