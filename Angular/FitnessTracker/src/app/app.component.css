@@ -68,6 +68,14 @@
     float: left;
 }
 
+.c1_up_2 a {
+    margin-top: 200px;
+    margin-left: 200px;
+    width: 140px;
+    height: 60px;
+    font-size: 30px;
+}
+
 .c1_down {
     display: block;
     height: 100px;
