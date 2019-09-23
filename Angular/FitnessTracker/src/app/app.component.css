@@ -1,0 +1,170 @@
+.main_div {
+    background-color: lightblue;
+    height: 1000px;
+    width: 1040px;
+    margin-left: 260px;
+    background-color: rgb(41, 52, 64);
+}
+
+.header {
+    display: block;
+    height: 77px;
+    background-color: #fafafb;
+    width: 1040px;
+    float: left;
+}
+
+.h1 {
+    display: block;
+    height: 77px;
+    width: 700px;
+    background-color: #fafafb;
+    float: left;
+}
+
+.h {
+    display: block;
+    height: 77px;
+    width: 340px;
+    background-color: #fafafb;
+    float: left;
+}
+
+.content {
+    display: block;
+    height: 1000px;
+    width: 1040px;
+    float: left;
+    background-color: blue;
+}
+
+.c1 {
+    display: block;
+    height: 500px;
+    width: 1040px;
+    float: left;
+}
+
+.c1_up {
+    display: block;
+    height: 400px;
+    width: 1040px;
+    float: left;
+    background: url("download.jpg") no-repeat;
+    background-size: cover;
+}
+
+.c1_up_1 {
+    display: block;
+    height: 400px;
+    width: 520px;
+    float: left;
+}
+
+.c1_up_2 {
+    display: block;
+    height: 400px;
+    width: 520px;
+    float: left;
+}
+
+.c1_down {
+    display: block;
+    height: 100px;
+    width: 1040px;
+    float: left;
+    background-color: rgb(41, 52, 64);
+}
+
+.c1_down_1 {
+    display: block;
+    height: 100px;
+    width: 520px;
+    float: left;
+    color: white;
+    background-color: rgb(41, 52, 64);
+}
+
+.c1_down_2 {
+    display: block;
+    height: 100px;
+    width: 520px;
+    color: white;
+    float: left;
+    background-color: rgb(41, 52, 64);
+}
+
+.c2 {
+    display: block;
+    height: 500px;
+    width: 1040px;
+    float: left;
+    background-color: white;
+}
+
+.c2_up {
+    display: block;
+    height: 150px;
+    width: 1040px;
+    float: left;
+    background-color: white;
+}
+
+.c2_mid {
+    display: block;
+    height: 175px;
+    width: 1040px;
+    float: left;
+    background-color: white;
+}
+
+.c2_mid_1 {
+    display: block;
+    height: 175px;
+    width: 520px;
+    float: left;
+    background-color: white;
+}
+
+.c2_mid_2 {
+    display: block;
+    height: 150px;
+    width: 520px;
+    float: left;
+    background-color: white;
+}
+
+.c2_down {
+    display: block;
+    height: 150px;
+    width: 1040px;
+    float: left;
+    background-color: white;
+}
+
+.c2_down_1 {
+    display: block;
+    height: 150px;
+    width: 520px;
+    float: left;
+    background-color: white;
+}
+
+.c2_mid_2 {
+    display: block;
+    height: 150px;
+    width: 520px;
+    float: left;
+    background-color: white;
+}
+
+.footer {
+    display: block;
+    height: 100px;
+    float: left;
+    width: 1040px;
+    background-color: rgb(41, 52, 64);
+    padding-top: 20px;
+    font-size: 16px;
+    color: white;
+}
