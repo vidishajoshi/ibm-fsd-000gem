@@ -1,0 +1,22 @@
+<p>league works!</p>
+<table>
+    <tr>
+        <th>
+            year</th>
+        <th>
+            league_name
+        </th>
+        <th>
+            season
+        </th>
+
+    </tr>
+    <tr *ngFor="let d of list">
+        <td>{{d.body.year}}</td>
+        <td>{{d.body.leagueName}}</td>
+        <td>{{d.body.season}}</td>
+    </tr>
+</table>
+
+<a href="league" ng-click="add()">add league</a>
+<button (click)="add()">ADD</button>

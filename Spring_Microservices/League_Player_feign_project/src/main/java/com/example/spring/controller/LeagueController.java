@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -15,6 +16,7 @@ import com.example.spring.dto.CreateLeagueRequestModel;
 import com.example.spring.service.CommonService;
 
 @RestController
+@CrossOrigin(origins="http://localhost:4200") 
 @RequestMapping("/league")
 public class LeagueController {
 
