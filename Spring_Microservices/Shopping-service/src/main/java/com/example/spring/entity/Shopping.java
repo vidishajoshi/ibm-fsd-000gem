@@ -18,10 +18,11 @@ public class Shopping {
 	private Integer id;
 	private int total;
 	private String day;
-	private Date date;
+	
 	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name="product_id")
 	private Product p;
+	
 	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name="customer_id")
 	private Customer c;
